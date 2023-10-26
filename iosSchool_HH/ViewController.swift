@@ -11,21 +11,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
-        var color = Color(red: 1, green: 1, blue: 1)
-        color.alpha = .bright
-
-        var nextColor = color
-        nextColor.alpha = .average
 
         let generator = ColorGenerator(alpha: 0.5)
-        generator.alpha = 1.0
+        let superGenerator: ColorGeneratorProtocol = ColorGenerator(alpha: 1)
 
-        let nextGenerator = generator
-        nextGenerator.alpha = 0.0
-
-        let alpha: Brightness = .average
-        let description = alpha.description()
+        generator.createColor()
     }
 }
