@@ -83,11 +83,11 @@ class Character {
 }
 
 class CharacterGenerator {
-    let names: [String] = ["Alex", "Jon", "Mark"]
-    let specieses: [String] = ["Human", "Animal", "Insect"]
-    let values: [String] = ["1", "2", "3", "4"]
-    let images: [String] = ["png", "jpg"]
-    let urls: [String] = ["https", "www"]
+    private let names: [String] = ["Alex", "Jon", "Mark"]
+    private let specieses: [String] = ["Human", "Animal", "Insect"]
+    private let values: [String] = ["1", "2", "3", "4"]
+    private let images: [String] = ["png", "jpg"]
+    private let urls: [String] = ["https", "www"]
 
     func generator() -> Character {
         return Character(id: Int.random(in: 1..<100000),
