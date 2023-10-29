@@ -58,14 +58,16 @@ class Character {
     let gender: Gender
     let status: Status
 
-    init(id: Int, 
-         name: String,
-         species: String,
-         image: String,
-         url: String,
-         episode: [String], 
-         gender: Gender,
-         status: Status) {
+    init(
+        id: Int,
+        name: String,
+        species: String,
+        image: String,
+        url: String,
+        episode: [String],
+        gender: Gender,
+        status: Status
+    ) {
         self.id = id
         self.name = name
         self.species = species
@@ -90,14 +92,15 @@ class CharacterGenerator {
     private let urls: [String] = ["https", "www"]
 
     func generator() -> Character {
-        return Character(id: Int.random(in: 1..<100000),
-                         name: names.randomElement() ?? "Unnamed",
-                         species: specieses.randomElement() ?? "Who are you?",
-                         image: images.randomElement() ?? "Is it image?",
-                         url: urls.randomElement() ?? "...",
-                         episode: values,
-                         gender: Character.Gender.randomGender(),
-                         status: Character.Status.randomStatus()
+        return Character(
+            id: Int.random(in: 1..<100000),
+            name: names.randomElement() ?? "Unnamed",
+            species: specieses.randomElement() ?? "Who are you?",
+            image: images.randomElement() ?? "Is it image?",
+            url: urls.randomElement() ?? "...",
+            episode: values,
+            gender: Character.Gender.randomGender(),
+            status: Character.Status.randomStatus()
         )
     }
 }
