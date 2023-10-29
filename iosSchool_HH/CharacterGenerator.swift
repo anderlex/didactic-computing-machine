@@ -8,52 +8,32 @@
 import Foundation
 
 struct Location {
-    var id: Int
-    var name: String
-    var type: String
-    var dimension: String
-    var residents: [String]
+    let id: Int
+    let name: String
+    let type: String
+    let dimension: String
+    let residents: [String]
 }
 
 struct LocationList {
     struct Info {
-        var count: Int
-        var pages: Int
-        var next: String?
-        var prev: String?
+        let count: Int
+        let pages: Int
+        let next: String?
+        let prev: String?
     }
 
-    var info: Info
-    var results: [Location]
+    let info: Info
+    let results: [Location]
 }
 
 class Character {
-    var id: Int
-    var name: String
-    var species: String
-    var image: String
-    var url: String
-    var episode: [String]
-    var gender: Gender
-    var status: Status
-
-    init(id: Int, name: String, species: String, image: String, url: String,
-         episode: [String], gender: Gender, status: Status) {
-        self.id = id
-        self.name = name
-        self.species = species
-        self.image = image
-        self.url = url
-        self.episode = episode
-        self.gender = gender
-        self.status = status
-    }
-
     enum Gender: String, CaseIterable {
         case female = "Female"
         case male = "Male"
         case genderless = "Genderless"
         case unknown = "unknown"
+        
         static func randomGender() -> Gender {
             return allCases.randomElement() ?? unknown
         }
@@ -63,9 +43,37 @@ class Character {
         case alive = "Alive"
         case dead = "Dead"
         case unknown = "unknown"
+
         static func randomStatus() -> Status {
             return allCases.randomElement() ?? unknown
         }
+    }
+
+    let id: Int
+    let name: String
+    let species: String
+    let image: String
+    let url: String
+    let episode: [String]
+    let gender: Gender
+    let status: Status
+
+    init(id: Int, 
+         name: String,
+         species: String,
+         image: String,
+         url: String,
+         episode: [String], 
+         gender: Gender,
+         status: Status) {
+        self.id = id
+        self.name = name
+        self.species = species
+        self.image = image
+        self.url = url
+        self.episode = episode
+        self.gender = gender
+        self.status = status
     }
 
     func description() {
@@ -80,6 +88,7 @@ class CharacterGenerator {
     let values: [String] = ["1", "2", "3", "4"]
     let images: [String] = ["png", "jpg"]
     let urls: [String] = ["https", "www"]
+
     func generator() -> Character {
         return Character(id: Int.random(in: 1..<100000),
                          name: names.randomElement() ?? "Unnamed",
