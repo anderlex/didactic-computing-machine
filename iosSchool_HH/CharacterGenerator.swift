@@ -33,7 +33,7 @@ class Character {
         case male = "Male"
         case genderless = "Genderless"
         case unknown = "unknown"
-        
+
         static func randomGender() -> Gender {
             return allCases.randomElement() ?? unknown
         }
@@ -84,7 +84,11 @@ class Character {
     }
 }
 
-class CharacterGenerator {
+protocol CharacterGeneratorProtocol {
+    func generator() -> Character
+}
+
+class CharacterGenerator: CharacterGeneratorProtocol {
     private let names: [String] = ["Alex", "Jon", "Mark"]
     private let specieses: [String] = ["Human", "Animal", "Insect"]
     private let values: [String] = ["1", "2", "3", "4"]

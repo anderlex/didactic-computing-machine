@@ -14,5 +14,9 @@ class ViewController: UIViewController {
         let generator = CharacterGenerator()
         let char = generator.generator()
         char.description()
+        var generatorProtocol: CharacterGeneratorProtocol
+        generatorProtocol = CharacterGenerator()
+        let charProtocol = generatorProtocol.generator()
+        charProtocol.description()
     }
 }
