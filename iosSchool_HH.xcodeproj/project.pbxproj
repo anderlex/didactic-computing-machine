@@ -69,6 +69,7 @@
 				3FD1F2B22AE119F200C8563F /* Assets.xcassets */,
 				3FD1F2B42AE119F200C8563F /* LaunchScreen.storyboard */,
 				3FD1F2B72AE119F200C8563F /* Info.plist */,
+				3FB73C702AEAA5CD00892419 /* Assembly.swift */,
 			);
 			path = iosSchool_HH;
 			sourceTree = "<group>";
@@ -168,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD1F2AE2AE119EE00C8563F /* ViewController.swift in Sources */,
+				3FB73C712AEAA5CD00892419 /* Assembly.swift in Sources */,
 				3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */,
 				3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */,
 				3FB73C6F2AE9192400892419 /* CharacterGenerator.swift in Sources */,
