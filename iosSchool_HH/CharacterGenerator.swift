@@ -92,7 +92,7 @@ class CharacterGenerator {
     private let urls: [String] = ["https", "www"]
 
     func generator() -> Character {
-        return Character(
+        Character(
             id: Int.random(in: 1..<100000),
             name: names.randomElement() ?? "Unnamed",
             species: specieses.randomElement() ?? "Who are you?",
