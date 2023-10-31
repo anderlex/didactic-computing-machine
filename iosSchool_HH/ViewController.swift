@@ -11,12 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let generator = CharacterGenerator()
-        let char = generator.generator()
-        char.description()
-        var generatorProtocol: CharacterGeneratorProtocol
-        generatorProtocol = CharacterGenerator()
-        let charProtocol = generatorProtocol.generator()
-        charProtocol.description()
+        var generatorOne: CharacterGeneratorProtocol
+        let generatorTwo: CharacterGenerator
+        generatorOne = CharacterGenerator()
+        generatorTwo = CharacterGenerator()
+        let charOne = generatorOne.generator()
+        let charTwo = generatorTwo.generator()
+        charOne.description()
+        charTwo.description()
     }
 }
