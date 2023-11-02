@@ -33,7 +33,7 @@ class Character {
         case male = "Male"
         case genderless = "Genderless"
         case unknown = "unknown"
-        
+
         static func randomGender() -> Gender {
             return allCases.randomElement() ?? unknown
         }
@@ -106,5 +106,23 @@ class CharacterGenerator: CharacterGeneratorProtocol {
             gender: Character.Gender.randomGender(),
             status: Character.Status.randomStatus()
         )
+    }
+
+    func generateNameOne(completion: (String) -> Void) {
+        completion("Bob")
+    }
+
+    func generateNameTwo(completion: () -> (String)) {
+        print(completion())
+    }
+
+    func generateNameThree() -> (String) -> Void {
+        { name in
+            print(String(name.reversed()))
+        }
+    }
+
+    func generateNameFour() -> (() -> String) {
+        { "Some name four" }
     }
 }

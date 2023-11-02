@@ -12,13 +12,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let generator = ColorGenerator(alpha: 1)
-        generator.changeColorCodes { colorCodes in
-            print(colorCodes)
+        let generator = CharacterGenerator()
+
+        generator.generateNameOne { name in
+            print(name)
         }
 
-        generator.changeColor {
-            [0, 100, 200]
-        }
+        generator.generateNameTwo { "Some name two" }
+
+        let completionThree = generator.generateNameThree()
+        completionThree("Thomas")
+
+        let completionFour = generator.generateNameFour()
+        print(completionFour())
     }
 }
