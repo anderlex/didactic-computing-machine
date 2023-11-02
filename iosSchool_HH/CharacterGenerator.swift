@@ -33,7 +33,7 @@ class Character {
         case male = "Male"
         case genderless = "Genderless"
         case unknown = "unknown"
-        
+
         static func randomGender() -> Gender {
             return allCases.randomElement() ?? unknown
         }
