@@ -117,9 +117,7 @@ class CharacterGenerator: CharacterGeneratorProtocol {
     }
 
     func generateNameThree() -> (String) -> Void {
-        { name in
-            print(String(name.reversed()))
-        }
+        { print(String($0.reversed())) }
     }
 
     func generateNameFour() -> (() -> String) {
