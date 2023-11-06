@@ -107,4 +107,20 @@ class CharacterGenerator: CharacterGeneratorProtocol {
             status: Character.Status.randomStatus()
         )
     }
+
+    func generateNameOne(completion: (String) -> Void) {
+        completion("Bob")
+    }
+
+    func generateNameTwo(completion: () -> (String)) {
+        print(completion())
+    }
+
+    func generateNameThree() -> (String) -> Void {
+        { print(String($0.reversed())) }
+    }
+
+    func generateNameFour() -> (() -> String) {
+        { "Some name four" }
+    }
 }
