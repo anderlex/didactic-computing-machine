@@ -89,9 +89,9 @@ protocol CharacterGeneratorProtocol {
 }
 
 class CharacterGenerator: CharacterGeneratorProtocol {
-    private let names: [String] = ["Alex", "Jon", "Mark"]
+    private let names: [String] = ["Alex", "Jon", "Mark", "Bob", "Nate", "Cassie"]
     private let specieses: [String] = ["Human", "Animal", "Insect"]
-    private let values: [String] = ["1", "2", "3", "4"]
+    private let values: [String] = ["1", "2"]
     private let images: [String] = ["png", "jpg"]
     private let urls: [String] = ["https", "www"]
 
