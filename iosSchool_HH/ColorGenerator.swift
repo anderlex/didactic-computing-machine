@@ -85,8 +85,6 @@ class ColorGenerator: ColorGeneratorProtocol {
     }
 
     func printAnyAlpha(generator: Any) {
-        let gen = generator as? ColorGeneratorProtocol
-
         guard let generator = generator as? ColorGeneratorProtocol else {
             return
         }

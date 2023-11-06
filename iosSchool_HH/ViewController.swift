@@ -14,15 +14,26 @@ class ViewController: UIViewController {
 
         let generator = CharacterGenerator()
         let characters = [generator.generator(), generator.generator(), generator.generator()]
-        print(characters)
+
+        for char in characters {
+            print(char.name, char.gender)
+        }
+
         let charactersMale = characters.filter { character in
             character.gender == Character.Gender.male
         }
-        print(charactersMale)
+
+        for char in charactersMale {
+            print(char.name, char.gender)
+        }
+
         let charactersA = characters.filter { character in
             character.name.contains("a")
         }
-        print(charactersA)
+
+        for char in charactersA {
+            print(char.name)
+        }
 
         let names = ["Martin", "Wayne", "Jordan", "Daniel", "Tony", "Bill"]
         let charactersfromNames = names.map {
@@ -37,11 +48,61 @@ class ViewController: UIViewController {
                 gender: char.gender,
                 status: char.status)
         }
-        print(charactersfromNames)
 
-        let episodes = ["1", "2", "3"]
-        let episodesChar = episodes.map {
-            
+        for char in charactersfromNames {
+            print(char.name, char.id)
         }
+
+        let series = ["1", "2", "3"]
+        let charactersSeries = series.map {
+            var arrayChar = [Character?]()
+            for _ in 1...3 {
+                let char = generator.generator()
+                arrayChar.append(Character(id: char.id,
+                                           name: char.name,
+                                           species: char.species,
+                                           image: char.image,
+                                           url: char.url,
+                                           episode: [$0],
+                                           gender: char.gender,
+                                           status: char.status))
+            }
+            return arrayChar
+        }
+
+        for characters in charactersSeries {
+            for char in characters {
+                print(char?.name ?? "Nothing", char?.episode ?? "Nothing")
+            }
+        }
+
+        let charactersSeriesComp = series.compactMap {
+            var arrayChar = [Character]()
+            for _ in 1...3 {
+                let char = generator.generator()
+                arrayChar.append(Character(id: char.id,
+                                           name: char.name,
+                                           species: char.species,
+                                           image: char.image,
+                                           url: char.url,
+                                           episode: [$0],
+                                           gender: char.gender,
+                                           status: char.status))
+            }
+            return arrayChar
+        }
+
+        for characters in charactersSeriesComp {
+            for char in characters {
+                print(char.name, char.episode)
+            }
+        }
+
+        let charactersNames = [generator.generator(), generator.generator(), generator.generator()]
+        let sumNames = charactersNames.reduce("") { result, char in
+            return result + char.name
+        }
+
+        print(sumNames)
     }
 }
