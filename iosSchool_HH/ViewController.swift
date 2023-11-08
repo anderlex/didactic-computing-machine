@@ -19,17 +19,13 @@ class ViewController: UIViewController {
             print(char.name, char.gender)
         }
 
-        let charactersMale = characters.filter { character in
-            character.gender == Character.Gender.male
-        }
+        let charactersMale = characters.filter { $0.gender == Character.Gender.male }
 
         for char in charactersMale {
             print(char.name, char.gender)
         }
 
-        let charactersA = characters.filter { character in
-            character.name.contains("a")
-        }
+        let charactersA = characters.filter { $0.name.contains("a") }
 
         for char in charactersA {
             print(char.name)
@@ -46,7 +42,8 @@ class ViewController: UIViewController {
                 url: char.url,
                 episode: char.episode,
                 gender: char.gender,
-                status: char.status)
+                status: char.status
+            )
         }
 
         for char in charactersfromNames {
@@ -54,40 +51,42 @@ class ViewController: UIViewController {
         }
 
         let series = ["1", "2", "3"]
-        let charactersSeries = series.map {
-            var arrayChar = [Character?]()
-            for _ in 1...3 {
+        let charactersSeries = series.map { serie in
+            let arrayChar = (1...3).map { _ in
                 let char = generator.generator()
-                arrayChar.append(Character(id: char.id,
-                                           name: char.name,
-                                           species: char.species,
-                                           image: char.image,
-                                           url: char.url,
-                                           episode: [$0],
-                                           gender: char.gender,
-                                           status: char.status))
+                return Character(
+                    id: char.id,
+                    name: char.name,
+                    species: char.species,
+                    image: char.image,
+                    url: char.url,
+                    episode: [serie],
+                    gender: char.gender,
+                    status: char.status
+                )
             }
             return arrayChar
         }
 
         for characters in charactersSeries {
             for char in characters {
-                print(char?.name ?? "Nothing", char?.episode ?? "Nothing")
+                print(char.name, char.episode)
             }
         }
 
-        let charactersSeriesComp = series.compactMap {
-            var arrayChar = [Character]()
-            for _ in 1...3 {
+        let charactersSeriesComp = series.compactMap { serie in
+            let arrayChar = (1...3).map { _ in
                 let char = generator.generator()
-                arrayChar.append(Character(id: char.id,
-                                           name: char.name,
-                                           species: char.species,
-                                           image: char.image,
-                                           url: char.url,
-                                           episode: [$0],
-                                           gender: char.gender,
-                                           status: char.status))
+                return Character(
+                    id: char.id,
+                    name: char.name,
+                    species: char.species,
+                    image: char.image,
+                    url: char.url,
+                    episode: [serie],
+                    gender: char.gender,
+                    status: char.status
+                )
             }
             return arrayChar
         }
@@ -99,9 +98,7 @@ class ViewController: UIViewController {
         }
 
         let charactersNames = [generator.generator(), generator.generator(), generator.generator()]
-        let sumNames = charactersNames.reduce("") { result, char in
-            return result + char.name
-        }
+        let sumNames = charactersNames.reduce("") { $0 + $1.name }
 
         print(sumNames)
     }
