@@ -52,7 +52,7 @@ class ViewController: UIViewController {
 
         let series = ["1", "2", "3"]
         let charactersSeries = series.map { serie in
-            let arrayChar = (1...3).map { _ in
+            (1...3).map { _ in
                 let char = generator.generator()
                 return Character(
                     id: char.id,
@@ -65,7 +65,6 @@ class ViewController: UIViewController {
                     status: char.status
                 )
             }
-            return arrayChar
         }
 
         for characters in charactersSeries {
@@ -75,7 +74,7 @@ class ViewController: UIViewController {
         }
 
         let charactersSeriesComp = series.compactMap { serie in
-            let arrayChar = (1...3).map { _ in
+            (1...3).map { _ in
                 let char = generator.generator()
                 return Character(
                     id: char.id,
@@ -88,7 +87,6 @@ class ViewController: UIViewController {
                     status: char.status
                 )
             }
-            return arrayChar
         }
 
         for characters in charactersSeriesComp {
