@@ -18,7 +18,7 @@ extension Assembly: AuthAssembly {
     func authVC() -> AuthViewController {
         .init(dataProvider: authDataProvider())
     }
-    
+
     func authDataProvider() -> AuthDataProvider {
         AuthDataProviderImp()
     }
