@@ -10,10 +10,23 @@
 		3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */; };
 		3FB73C6F2AE9192400892419 /* CharacterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */; };
 		3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C742AEFC59B00892419 /* Assembly.swift */; };
+		3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C762AF9184F00892419 /* BaseCoordinator.swift */; };
+		3FB73C792AF9193900892419 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C782AF9193900892419 /* AppCoordinator.swift */; };
+		3FB73C7D2AF922D600892419 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C7C2AF922D600892419 /* AuthViewController.swift */; };
+		3FB73C7F2AF9230D00892419 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C7E2AF9230D00892419 /* AuthView.swift */; };
+		3FB73C812AF9242700892419 /* AuthViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C802AF9242700892419 /* AuthViewData.swift */; };
+		3FB73C832AF9245300892419 /* AuthDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C822AF9245300892419 /* AuthDataProvider.swift */; };
+		3FB73C852AF9249200892419 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C842AF9249200892419 /* AuthAssembly.swift */; };
+		3FB73C872AF9261200892419 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C862AF9261200892419 /* AuthCoordinator.swift */; };
+		3FB73C8A2AFD12A700892419 /* SplashDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C892AFD12A700892419 /* SplashDataProvider.swift */; };
+		3FB73C8C2AFD12F600892419 /* SplashViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C8B2AFD12F600892419 /* SplashViewData.swift */; };
+		3FB73C8E2AFD131C00892419 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C8D2AFD131C00892419 /* SplashView.swift */; };
+		3FB73C902AFD137E00892419 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C8F2AFD137E00892419 /* SplashViewController.swift */; };
+		3FB73C922AFD140E00892419 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C912AFD140E00892419 /* SplashCoordinator.swift */; };
+		3FB73C942AFD145D00892419 /* SplashAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C932AFD145D00892419 /* SplashAssembly.swift */; };
 		3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */; };
 		3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */; };
 		3FD1F2AE2AE119EE00C8563F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AD2AE119EE00C8563F /* ViewController.swift */; };
-		3FD1F2B12AE119EE00C8563F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AF2AE119EE00C8563F /* Main.storyboard */; };
 		3FD1F2B32AE119F200C8563F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD1F2B22AE119F200C8563F /* Assets.xcassets */; };
 		3FD1F2B62AE119F200C8563F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD1F2B42AE119F200C8563F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,11 +35,24 @@
 		3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 		3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGenerator.swift; sourceTree = "<group>"; };
 		3FB73C742AEFC59B00892419 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = ../Assembly.swift; sourceTree = "<group>"; };
+		3FB73C762AF9184F00892419 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		3FB73C782AF9193900892419 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3FB73C7C2AF922D600892419 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		3FB73C7E2AF9230D00892419 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		3FB73C802AF9242700892419 /* AuthViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewData.swift; sourceTree = "<group>"; };
+		3FB73C822AF9245300892419 /* AuthDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataProvider.swift; sourceTree = "<group>"; };
+		3FB73C842AF9249200892419 /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
+		3FB73C862AF9261200892419 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		3FB73C892AFD12A700892419 /* SplashDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDataProvider.swift; sourceTree = "<group>"; };
+		3FB73C8B2AFD12F600892419 /* SplashViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewData.swift; sourceTree = "<group>"; };
+		3FB73C8D2AFD131C00892419 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		3FB73C8F2AFD137E00892419 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3FB73C912AFD140E00892419 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		3FB73C932AFD145D00892419 /* SplashAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembly.swift; sourceTree = "<group>"; };
 		3FD1F2A62AE119EE00C8563F /* iosSchool_HH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosSchool_HH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3FD1F2AD2AE119EE00C8563F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3FD1F2B02AE119EE00C8563F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FD1F2B22AE119F200C8563F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD1F2B52AE119F200C8563F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD1F2B72AE119F200C8563F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +69,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FB73C7A2AF9222B00892419 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3FB73C882AFD128100892419 /* Splash */,
+				3FB73C7B2AF9225500892419 /* Auth */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3FB73C7B2AF9225500892419 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3FB73C7C2AF922D600892419 /* AuthViewController.swift */,
+				3FB73C7E2AF9230D00892419 /* AuthView.swift */,
+				3FB73C802AF9242700892419 /* AuthViewData.swift */,
+				3FB73C822AF9245300892419 /* AuthDataProvider.swift */,
+				3FB73C842AF9249200892419 /* AuthAssembly.swift */,
+				3FB73C862AF9261200892419 /* AuthCoordinator.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3FB73C882AFD128100892419 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				3FB73C892AFD12A700892419 /* SplashDataProvider.swift */,
+				3FB73C8B2AFD12F600892419 /* SplashViewData.swift */,
+				3FB73C8D2AFD131C00892419 /* SplashView.swift */,
+				3FB73C8F2AFD137E00892419 /* SplashViewController.swift */,
+				3FB73C912AFD140E00892419 /* SplashCoordinator.swift */,
+				3FB73C932AFD145D00892419 /* SplashAssembly.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		3FD1F29D2AE119EE00C8563F = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +123,18 @@
 		3FD1F2A82AE119EE00C8563F /* iosSchool_HH */ = {
 			isa = PBXGroup;
 			children = (
+				3FB73C7A2AF9222B00892419 /* Modules */,
 				3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */,
 				3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */,
 				3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */,
 				3FD1F2AD2AE119EE00C8563F /* ViewController.swift */,
 				3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */,
-				3FD1F2AF2AE119EE00C8563F /* Main.storyboard */,
 				3FD1F2B22AE119F200C8563F /* Assets.xcassets */,
 				3FD1F2B42AE119F200C8563F /* LaunchScreen.storyboard */,
 				3FD1F2B72AE119F200C8563F /* Info.plist */,
 				3FB73C742AEFC59B00892419 /* Assembly.swift */,
+				3FB73C762AF9184F00892419 /* BaseCoordinator.swift */,
+				3FB73C782AF9193900892419 /* AppCoordinator.swift */,
 			);
 			path = iosSchool_HH;
 			sourceTree = "<group>";
@@ -137,7 +200,6 @@
 			files = (
 				3FD1F2B62AE119F200C8563F /* LaunchScreen.storyboard in Resources */,
 				3FD1F2B32AE119F200C8563F /* Assets.xcassets in Resources */,
-				3FD1F2B12AE119EE00C8563F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,24 +234,30 @@
 			files = (
 				3FD1F2AE2AE119EE00C8563F /* ViewController.swift in Sources */,
 				3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */,
+				3FB73C8E2AFD131C00892419 /* SplashView.swift in Sources */,
+				3FB73C902AFD137E00892419 /* SplashViewController.swift in Sources */,
 				3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */,
+				3FB73C922AFD140E00892419 /* SplashCoordinator.swift in Sources */,
+				3FB73C7D2AF922D600892419 /* AuthViewController.swift in Sources */,
+				3FB73C872AF9261200892419 /* AuthCoordinator.swift in Sources */,
 				3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */,
+				3FB73C792AF9193900892419 /* AppCoordinator.swift in Sources */,
+				3FB73C812AF9242700892419 /* AuthViewData.swift in Sources */,
+				3FB73C7F2AF9230D00892419 /* AuthView.swift in Sources */,
+				3FB73C832AF9245300892419 /* AuthDataProvider.swift in Sources */,
+				3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */,
 				3FB73C6F2AE9192400892419 /* CharacterGenerator.swift in Sources */,
 				3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */,
+				3FB73C852AF9249200892419 /* AuthAssembly.swift in Sources */,
+				3FB73C8A2AFD12A700892419 /* SplashDataProvider.swift in Sources */,
+				3FB73C942AFD145D00892419 /* SplashAssembly.swift in Sources */,
+				3FB73C8C2AFD12F600892419 /* SplashViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3FD1F2AF2AE119EE00C8563F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FD1F2B02AE119EE00C8563F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3FD1F2B42AE119F200C8563F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -333,7 +401,6 @@
 				INFOPLIST_FILE = iosSchool_HH/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,7 +429,6 @@
 				INFOPLIST_FILE = iosSchool_HH/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
