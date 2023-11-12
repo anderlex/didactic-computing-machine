@@ -17,11 +17,11 @@ extension Assembly: SplashAssembly {
     func splashCoordinator(onSuccess: (() -> Void)?) -> SplashCoordinator {
         SplashCoordinator(assembly: self, context: .init(onSuccess: onSuccess))
     }
-    
+
     func splashVC(onSuccess: (() -> Void)?) -> SplashViewController {
         .init(dataProvider: splashDataProvider(), onSuccess: onSuccess)
     }
-    
+
     func splashDataProvider() -> SplashDataProvider {
         SplashDataProviderImp()
     }
