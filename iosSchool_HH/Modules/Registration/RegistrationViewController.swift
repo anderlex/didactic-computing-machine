@@ -10,6 +10,7 @@ import UIKit
 class RegistrationViewController: UIViewController {
 
     private let dataProvider: RegistrationDataProvider
+    var onRegistrationSuccess: (() -> Void)?
 
     init(dataProvider: RegistrationDataProvider) {
         self.dataProvider = dataProvider
@@ -24,5 +25,10 @@ class RegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .green
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear loaded!")
     }
 }
