@@ -11,7 +11,7 @@ class ApiClient {
 
     func performRequest<ResponseModel: Decodable> (
         url: String,
-        data: Data?,
+        data: Data?, // ["username": username, "password": password"]
         method: NetworkConstants.HTTPMethod,
         onRequestCompleted: @escaping (Result<ResponseModel, ApiError>) -> Void
     ) {
