@@ -25,5 +25,13 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .cyan
+        login()
+    }
+
+    func login() {
+        dataProvider.auth(login: "anderlex", password: "52") { token, error in
+            print(token ?? "Hет токена")
+            print(error?.rawValue ?? "Нет ошибки")
+        }
     }
 }
