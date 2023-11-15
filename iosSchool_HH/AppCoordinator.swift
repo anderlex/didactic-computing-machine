@@ -25,10 +25,11 @@ class AppCoordinator: BaseCoordinator<CoordinatorContext> {
     }
 
     private func authBootstrap() {
+        let registrationCoordinator = assembly.registrationCoordinator {
+            print("Registration Loaded!")
+        }
         setRoot(
-            viewController: assembly.registrationCoordinator(
-            onRegistrationSuccess: { print("Registration Loaded!") }
-        ).make()
+            viewController: registrationCoordinator.make()
         )
     }
 

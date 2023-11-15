@@ -14,15 +14,15 @@ protocol RegistrationAssembly {
 }
 
 extension Assembly: RegistrationAssembly {
-    func registrationCoordinator(onRegistrationSuccess: (() -> Void)?) -> RegistrationCoordinator {
-        RegistrationCoordinator(assembly: self, context: .init(onRegistrationSuccess: onRegistrationSuccess))
-    }
-
     func registrationVC(onRegistrationSuccess: (() -> Void)?) -> RegistrationViewController {
         .init(dataProvider: registrationDataProvider(), onRegistrationSuccess: onRegistrationSuccess)
     }
 
     func registrationDataProvider() -> RegistrationDataProvider {
         RegistrationDataProviderImp()
+    }
+
+    func registrationCoordinator(onRegistrationSuccess: (() -> Void)?) -> RegistrationCoordinator {
+        RegistrationCoordinator(assembly: self, context: .init(onRegistrationSuccess: onRegistrationSuccess))
     }
 }
