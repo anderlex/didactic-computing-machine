@@ -37,6 +37,15 @@
 		3FB73CAD2B025B5F00892419 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CAC2B025B5F00892419 /* NetworkConstants.swift */; };
 		3FB73CAF2B025CB500892419 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CAE2B025CB500892419 /* ApiError.swift */; };
 		3FB73CB12B02601100892419 /* AuthApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CB02B02601100892419 /* AuthApiClient.swift */; };
+		3FB73CB52B06111C00892419 /* RegistrationApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CB42B06111C00892419 /* RegistrationApiClient.swift */; };
+		3FB73CB72B06179800892419 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CB62B06179800892419 /* UserData.swift */; };
+		3FB73CB92B0624F900892419 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CB82B0624F900892419 /* CharactersView.swift */; };
+		3FB73CBB2B06254300892419 /* CharactersViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CBA2B06254300892419 /* CharactersViewData.swift */; };
+		3FB73CBD2B06256D00892419 /* CharactersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CBC2B06256D00892419 /* CharactersCoordinator.swift */; };
+		3FB73CBF2B0625D400892419 /* CharactersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CBE2B0625D400892419 /* CharactersAssembly.swift */; };
+		3FB73CC12B06260900892419 /* CharactersDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC02B06260900892419 /* CharactersDataProvider.swift */; };
+		3FB73CC32B06264F00892419 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC22B06264F00892419 /* CharactersViewController.swift */; };
+		3FB73CC52B0627CA00892419 /* CharactersApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC42B0627CA00892419 /* CharactersApiClient.swift */; };
 		3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */; };
 		3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */; };
 		3FD1F2AE2AE119EE00C8563F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AD2AE119EE00C8563F /* ViewController.swift */; };
@@ -75,6 +84,15 @@
 		3FB73CAC2B025B5F00892419 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		3FB73CAE2B025CB500892419 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		3FB73CB02B02601100892419 /* AuthApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiClient.swift; sourceTree = "<group>"; };
+		3FB73CB42B06111C00892419 /* RegistrationApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationApiClient.swift; sourceTree = "<group>"; };
+		3FB73CB62B06179800892419 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		3FB73CB82B0624F900892419 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		3FB73CBA2B06254300892419 /* CharactersViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewData.swift; sourceTree = "<group>"; };
+		3FB73CBC2B06256D00892419 /* CharactersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCoordinator.swift; sourceTree = "<group>"; };
+		3FB73CBE2B0625D400892419 /* CharactersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersAssembly.swift; sourceTree = "<group>"; };
+		3FB73CC02B06260900892419 /* CharactersDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDataProvider.swift; sourceTree = "<group>"; };
+		3FB73CC22B06264F00892419 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		3FB73CC42B0627CA00892419 /* CharactersApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersApiClient.swift; sourceTree = "<group>"; };
 		3FD1F2A62AE119EE00C8563F /* iosSchool_HH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosSchool_HH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +116,8 @@
 		3FB73C7A2AF9222B00892419 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3FB73CB22B026B6600892419 /* Locations */,
+				3FB73CB32B026B6F00892419 /* Characters */,
 				3FB73C952AFE53DF00892419 /* Registration */,
 				3FB73C882AFD128100892419 /* Splash */,
 				3FB73C7B2AF9225500892419 /* Auth */,
@@ -147,9 +167,11 @@
 		3FB73CA22B02511600892419 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */,
 				3FB73CA32B02514D00892419 /* Location.swift */,
 				3FB73CA52B0259CF00892419 /* LocationsList.swift */,
 				3FB73CA72B025A3D00892419 /* TokenResponse.swift */,
+				3FB73CB62B06179800892419 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +183,8 @@
 				3FB73CAC2B025B5F00892419 /* NetworkConstants.swift */,
 				3FB73CAE2B025CB500892419 /* ApiError.swift */,
 				3FB73CB02B02601100892419 /* AuthApiClient.swift */,
+				3FB73CB42B06111C00892419 /* RegistrationApiClient.swift */,
+				3FB73CC42B0627CA00892419 /* CharactersApiClient.swift */,
 			);
 			path = ApiClient;
 			sourceTree = "<group>";
@@ -175,6 +199,12 @@
 		3FB73CB32B026B6F00892419 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				3FB73CB82B0624F900892419 /* CharactersView.swift */,
+				3FB73CBA2B06254300892419 /* CharactersViewData.swift */,
+				3FB73CBC2B06256D00892419 /* CharactersCoordinator.swift */,
+				3FB73CBE2B0625D400892419 /* CharactersAssembly.swift */,
+				3FB73CC02B06260900892419 /* CharactersDataProvider.swift */,
+				3FB73CC22B06264F00892419 /* CharactersViewController.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -198,8 +228,6 @@
 		3FD1F2A82AE119EE00C8563F /* iosSchool_HH */ = {
 			isa = PBXGroup;
 			children = (
-				3FB73CB32B026B6F00892419 /* Characters */,
-				3FB73CB22B026B6600892419 /* Locations */,
 				3FB73CA92B025AE200892419 /* ApiClient */,
 				3FB73CA22B02511600892419 /* Models */,
 				3FB73C7A2AF9222B00892419 /* Modules */,
@@ -207,7 +235,6 @@
 				3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */,
 				3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */,
 				3FD1F2AD2AE119EE00C8563F /* ViewController.swift */,
-				3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */,
 				3FD1F2B22AE119F200C8563F /* Assets.xcassets */,
 				3FD1F2B42AE119F200C8563F /* LaunchScreen.storyboard */,
 				3FD1F2B72AE119F200C8563F /* Info.plist */,
@@ -311,10 +338,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB73CBF2B0625D400892419 /* CharactersAssembly.swift in Sources */,
 				3FD1F2AE2AE119EE00C8563F /* ViewController.swift in Sources */,
 				3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */,
 				3FB73C8E2AFD131C00892419 /* SplashView.swift in Sources */,
 				3FB73CB12B02601100892419 /* AuthApiClient.swift in Sources */,
+				3FB73CBD2B06256D00892419 /* CharactersCoordinator.swift in Sources */,
 				3FB73CAD2B025B5F00892419 /* NetworkConstants.swift in Sources */,
 				3FB73C902AFD137E00892419 /* SplashViewController.swift in Sources */,
 				3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */,
@@ -325,6 +354,7 @@
 				3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */,
 				3FB73C992AFE544300892419 /* RegistrationDataProvider.swift in Sources */,
 				3FB73C792AF9193900892419 /* AppCoordinator.swift in Sources */,
+				3FB73CB92B0624F900892419 /* CharactersView.swift in Sources */,
 				3FB73CAF2B025CB500892419 /* ApiError.swift in Sources */,
 				3FB73C812AF9242700892419 /* AuthViewData.swift in Sources */,
 				3FB73CA82B025A3D00892419 /* TokenResponse.swift in Sources */,
@@ -333,7 +363,9 @@
 				3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */,
 				3FB73C9D2AFE54D900892419 /* RegistrationView.swift in Sources */,
 				3FB73C9B2AFE54B400892419 /* RegistrationViewData.swift in Sources */,
+				3FB73CC32B06264F00892419 /* CharactersViewController.swift in Sources */,
 				3FB73CA42B02514D00892419 /* Location.swift in Sources */,
+				3FB73CB72B06179800892419 /* UserData.swift in Sources */,
 				3FB73C6F2AE9192400892419 /* CharacterGenerator.swift in Sources */,
 				3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */,
 				3FB73C852AF9249200892419 /* AuthAssembly.swift in Sources */,
@@ -341,7 +373,11 @@
 				3FB73C8A2AFD12A700892419 /* SplashDataProvider.swift in Sources */,
 				3FB73CA12AFE559800892419 /* RegistrationAssembly.swift in Sources */,
 				3FB73C972AFE540300892419 /* RegistrationViewController.swift in Sources */,
+				3FB73CC52B0627CA00892419 /* CharactersApiClient.swift in Sources */,
+				3FB73CB52B06111C00892419 /* RegistrationApiClient.swift in Sources */,
 				3FB73C942AFD145D00892419 /* SplashAssembly.swift in Sources */,
+				3FB73CC12B06260900892419 /* CharactersDataProvider.swift in Sources */,
+				3FB73CBB2B06254300892419 /* CharactersViewData.swift in Sources */,
 				3FB73C8C2AFD12F600892419 /* SplashViewData.swift in Sources */,
 				3FB73CAB2B025AF300892419 /* ApiClient.swift in Sources */,
 			);

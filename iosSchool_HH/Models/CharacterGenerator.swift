@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Character {
-    enum Gender: String, CaseIterable {
+class Character: Codable {
+    enum Gender: String, CaseIterable, Codable {
         case female = "Female"
         case male = "Male"
         case genderless = "Genderless"
@@ -19,7 +19,7 @@ class Character {
         }
     }
 
-    enum Status: String, CaseIterable {
+    enum Status: String, CaseIterable, Codable {
         case alive = "Alive"
         case dead = "Dead"
         case unknown = "unknown"
@@ -37,6 +37,17 @@ class Character {
     let episode: [String]
     let gender: Gender
     let status: Status
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case status
+        case species
+        case gender
+        case image
+        case episode
+        case url
+    }
 
     init(
         id: Int,
