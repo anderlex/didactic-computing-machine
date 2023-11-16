@@ -46,6 +46,8 @@
 		3FB73CC12B06260900892419 /* CharactersDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC02B06260900892419 /* CharactersDataProvider.swift */; };
 		3FB73CC32B06264F00892419 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC22B06264F00892419 /* CharactersViewController.swift */; };
 		3FB73CC52B0627CA00892419 /* CharactersApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC42B0627CA00892419 /* CharactersApiClient.swift */; };
+		3FB73CC72B063EAF00892419 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC62B063EAF00892419 /* LocationsView.swift */; };
+		3FB73CC92B063EFE00892419 /* LocationsViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC82B063EFE00892419 /* LocationsViewData.swift */; };
 		3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */; };
 		3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */; };
 		3FD1F2AE2AE119EE00C8563F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AD2AE119EE00C8563F /* ViewController.swift */; };
@@ -93,6 +95,8 @@
 		3FB73CC02B06260900892419 /* CharactersDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDataProvider.swift; sourceTree = "<group>"; };
 		3FB73CC22B06264F00892419 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		3FB73CC42B0627CA00892419 /* CharactersApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersApiClient.swift; sourceTree = "<group>"; };
+		3FB73CC62B063EAF00892419 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		3FB73CC82B063EFE00892419 /* LocationsViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewData.swift; sourceTree = "<group>"; };
 		3FD1F2A62AE119EE00C8563F /* iosSchool_HH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosSchool_HH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 		3FB73CB22B026B6600892419 /* Locations */ = {
 			isa = PBXGroup;
 			children = (
+				3FB73CC62B063EAF00892419 /* LocationsView.swift */,
+				3FB73CC82B063EFE00892419 /* LocationsViewData.swift */,
 			);
 			path = Locations;
 			sourceTree = "<group>";
@@ -369,9 +375,11 @@
 				3FB73C6F2AE9192400892419 /* CharacterGenerator.swift in Sources */,
 				3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */,
 				3FB73C852AF9249200892419 /* AuthAssembly.swift in Sources */,
+				3FB73CC72B063EAF00892419 /* LocationsView.swift in Sources */,
 				3FB73CA62B0259CF00892419 /* LocationsList.swift in Sources */,
 				3FB73C8A2AFD12A700892419 /* SplashDataProvider.swift in Sources */,
 				3FB73CA12AFE559800892419 /* RegistrationAssembly.swift in Sources */,
+				3FB73CC92B063EFE00892419 /* LocationsViewData.swift in Sources */,
 				3FB73C972AFE540300892419 /* RegistrationViewController.swift in Sources */,
 				3FB73CC52B0627CA00892419 /* CharactersApiClient.swift in Sources */,
 				3FB73CB52B06111C00892419 /* RegistrationApiClient.swift in Sources */,
