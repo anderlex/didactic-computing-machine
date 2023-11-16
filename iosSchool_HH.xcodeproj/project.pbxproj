@@ -37,6 +37,8 @@
 		3FB73CAD2B025B5F00892419 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CAC2B025B5F00892419 /* NetworkConstants.swift */; };
 		3FB73CAF2B025CB500892419 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CAE2B025CB500892419 /* ApiError.swift */; };
 		3FB73CB12B02601100892419 /* AuthApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CB02B02601100892419 /* AuthApiClient.swift */; };
+		3FB73CCC2B06409600892419 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CCB2B06409500892419 /* BaseViewController.swift */; };
+		3FB73CCF2B0642E700892419 /* AuthViewImp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB73CCE2B0642E700892419 /* AuthViewImp.xib */; };
 		3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */; };
 		3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */; };
 		3FD1F2AE2AE119EE00C8563F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AD2AE119EE00C8563F /* ViewController.swift */; };
@@ -75,6 +77,8 @@
 		3FB73CAC2B025B5F00892419 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		3FB73CAE2B025CB500892419 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		3FB73CB02B02601100892419 /* AuthApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiClient.swift; sourceTree = "<group>"; };
+		3FB73CCB2B06409500892419 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3FB73CCE2B0642E700892419 /* AuthViewImp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewImp.xib; sourceTree = "<group>"; };
 		3FD1F2A62AE119EE00C8563F /* iosSchool_HH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosSchool_HH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		3FB73C7B2AF9225500892419 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				3FB73CCD2B0642C200892419 /* Subviews */,
 				3FB73C7C2AF922D600892419 /* AuthViewController.swift */,
 				3FB73C7E2AF9230D00892419 /* AuthView.swift */,
 				3FB73C802AF9242700892419 /* AuthViewData.swift */,
@@ -179,6 +184,23 @@
 			path = Characters;
 			sourceTree = "<group>";
 		};
+		3FB73CCA2B06406A00892419 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3FB73C762AF9184F00892419 /* BaseCoordinator.swift */,
+				3FB73CCB2B06409500892419 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3FB73CCD2B0642C200892419 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				3FB73CCE2B0642E700892419 /* AuthViewImp.xib */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		3FD1F29D2AE119EE00C8563F = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +220,7 @@
 		3FD1F2A82AE119EE00C8563F /* iosSchool_HH */ = {
 			isa = PBXGroup;
 			children = (
+				3FB73CCA2B06406A00892419 /* Common */,
 				3FB73CB32B026B6F00892419 /* Characters */,
 				3FB73CB22B026B6600892419 /* Locations */,
 				3FB73CA92B025AE200892419 /* ApiClient */,
@@ -212,7 +235,6 @@
 				3FD1F2B42AE119F200C8563F /* LaunchScreen.storyboard */,
 				3FD1F2B72AE119F200C8563F /* Info.plist */,
 				3FB73C742AEFC59B00892419 /* Assembly.swift */,
-				3FB73C762AF9184F00892419 /* BaseCoordinator.swift */,
 				3FB73C782AF9193900892419 /* AppCoordinator.swift */,
 			);
 			path = iosSchool_HH;
@@ -279,6 +301,7 @@
 			files = (
 				3FD1F2B62AE119F200C8563F /* LaunchScreen.storyboard in Resources */,
 				3FD1F2B32AE119F200C8563F /* Assets.xcassets in Resources */,
+				3FB73CCF2B0642E700892419 /* AuthViewImp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +341,7 @@
 				3FB73CAD2B025B5F00892419 /* NetworkConstants.swift in Sources */,
 				3FB73C902AFD137E00892419 /* SplashViewController.swift in Sources */,
 				3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */,
+				3FB73CCC2B06409600892419 /* BaseViewController.swift in Sources */,
 				3FB73C922AFD140E00892419 /* SplashCoordinator.swift in Sources */,
 				3FB73C7D2AF922D600892419 /* AuthViewController.swift in Sources */,
 				3FB73C872AF9261200892419 /* AuthCoordinator.swift in Sources */,
