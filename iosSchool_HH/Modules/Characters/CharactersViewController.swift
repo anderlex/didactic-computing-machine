@@ -25,6 +25,7 @@ class CharactersViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .red
+        get()
     }
 
     func get() {

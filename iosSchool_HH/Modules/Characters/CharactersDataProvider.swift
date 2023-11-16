@@ -20,7 +20,9 @@ class CharactersDataProviderImp: CharactersDataProvider {
         self.apiClient = apiClient
     }
 
-    func getCharacter(onRequestCompleted: @escaping (Character?, ApiError?) -> Void) {
-        return apiClient.getCharacter(onRequestCompleted: onRequestCompleted)
+    func getCharacter(
+        onRequestCompleted: @escaping (Character?, ApiError?) -> Void
+    ) {
+        apiClient.getCharacter(onRequestCompleted: onRequestCompleted)
     }
 }
