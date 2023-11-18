@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthViewController: UIViewController {
+class AuthViewController<View: AuthView>: BaseViewController<View> {
 
     private let dataProvider: AuthDataProvider
 
@@ -24,6 +24,15 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .cyan
+        rootView.setView()
+
+        login()
+    }
+
+    func login() {
+        dataProvider.auth(login: "anderlex", password: "52") { token, error in
+            print(token ?? "Hет токена")
+            print(error?.rawValue ?? "Нет ошибки")
+        }
     }
 }
