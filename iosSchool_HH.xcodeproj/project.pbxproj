@@ -48,6 +48,11 @@
 		3FB73CC52B0627CA00892419 /* CharactersApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC42B0627CA00892419 /* CharactersApiClient.swift */; };
 		3FB73CC72B063EAF00892419 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC62B063EAF00892419 /* LocationsView.swift */; };
 		3FB73CC92B063EFE00892419 /* LocationsViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CC82B063EFE00892419 /* LocationsViewData.swift */; };
+		3FB73CD12B09199500892419 /* LocationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CD02B09199500892419 /* LocationsCoordinator.swift */; };
+		3FB73CD32B0919F000892419 /* LocationsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CD22B0919F000892419 /* LocationsDataProvider.swift */; };
+		3FB73CD52B091AFD00892419 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CD42B091AFD00892419 /* LocationsViewController.swift */; };
+		3FB73CD72B091BD600892419 /* LocationsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CD62B091BD600892419 /* LocationsAssembly.swift */; };
+		3FB73CD92B091EE900892419 /* LocationsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CD82B091EE900892419 /* LocationsApiClient.swift */; };
 		3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */; };
 		3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */; };
 		3FD1F2AE2AE119EE00C8563F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AD2AE119EE00C8563F /* ViewController.swift */; };
@@ -97,6 +102,11 @@
 		3FB73CC42B0627CA00892419 /* CharactersApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersApiClient.swift; sourceTree = "<group>"; };
 		3FB73CC62B063EAF00892419 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		3FB73CC82B063EFE00892419 /* LocationsViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewData.swift; sourceTree = "<group>"; };
+		3FB73CD02B09199500892419 /* LocationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCoordinator.swift; sourceTree = "<group>"; };
+		3FB73CD22B0919F000892419 /* LocationsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataProvider.swift; sourceTree = "<group>"; };
+		3FB73CD42B091AFD00892419 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		3FB73CD62B091BD600892419 /* LocationsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsAssembly.swift; sourceTree = "<group>"; };
+		3FB73CD82B091EE900892419 /* LocationsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsApiClient.swift; sourceTree = "<group>"; };
 		3FD1F2A62AE119EE00C8563F /* iosSchool_HH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosSchool_HH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +199,7 @@
 				3FB73CB02B02601100892419 /* AuthApiClient.swift */,
 				3FB73CB42B06111C00892419 /* RegistrationApiClient.swift */,
 				3FB73CC42B0627CA00892419 /* CharactersApiClient.swift */,
+				3FB73CD82B091EE900892419 /* LocationsApiClient.swift */,
 			);
 			path = ApiClient;
 			sourceTree = "<group>";
@@ -198,6 +209,10 @@
 			children = (
 				3FB73CC62B063EAF00892419 /* LocationsView.swift */,
 				3FB73CC82B063EFE00892419 /* LocationsViewData.swift */,
+				3FB73CD02B09199500892419 /* LocationsCoordinator.swift */,
+				3FB73CD22B0919F000892419 /* LocationsDataProvider.swift */,
+				3FB73CD42B091AFD00892419 /* LocationsViewController.swift */,
+				3FB73CD62B091BD600892419 /* LocationsAssembly.swift */,
 			);
 			path = Locations;
 			sourceTree = "<group>";
@@ -355,6 +370,7 @@
 				3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */,
 				3FB73C922AFD140E00892419 /* SplashCoordinator.swift in Sources */,
 				3FB73C7D2AF922D600892419 /* AuthViewController.swift in Sources */,
+				3FB73CD92B091EE900892419 /* LocationsApiClient.swift in Sources */,
 				3FB73C872AF9261200892419 /* AuthCoordinator.swift in Sources */,
 				3FB73C9F2AFE551D00892419 /* RegistrationCoordinator.swift in Sources */,
 				3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */,
@@ -366,12 +382,15 @@
 				3FB73CA82B025A3D00892419 /* TokenResponse.swift in Sources */,
 				3FB73C7F2AF9230D00892419 /* AuthView.swift in Sources */,
 				3FB73C832AF9245300892419 /* AuthDataProvider.swift in Sources */,
+				3FB73CD52B091AFD00892419 /* LocationsViewController.swift in Sources */,
 				3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */,
 				3FB73C9D2AFE54D900892419 /* RegistrationView.swift in Sources */,
+				3FB73CD12B09199500892419 /* LocationsCoordinator.swift in Sources */,
 				3FB73C9B2AFE54B400892419 /* RegistrationViewData.swift in Sources */,
 				3FB73CC32B06264F00892419 /* CharactersViewController.swift in Sources */,
 				3FB73CA42B02514D00892419 /* Location.swift in Sources */,
 				3FB73CB72B06179800892419 /* UserData.swift in Sources */,
+				3FB73CD72B091BD600892419 /* LocationsAssembly.swift in Sources */,
 				3FB73C6F2AE9192400892419 /* CharacterGenerator.swift in Sources */,
 				3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */,
 				3FB73C852AF9249200892419 /* AuthAssembly.swift in Sources */,
@@ -386,6 +405,7 @@
 				3FB73C942AFD145D00892419 /* SplashAssembly.swift in Sources */,
 				3FB73CC12B06260900892419 /* CharactersDataProvider.swift in Sources */,
 				3FB73CBB2B06254300892419 /* CharactersViewData.swift in Sources */,
+				3FB73CD32B0919F000892419 /* LocationsDataProvider.swift in Sources */,
 				3FB73C8C2AFD12F600892419 /* SplashViewData.swift in Sources */,
 				3FB73CAB2B025AF300892419 /* ApiClient.swift in Sources */,
 			);
