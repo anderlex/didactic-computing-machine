@@ -14,6 +14,7 @@ protocol RegistrationView: UIView {
 
 class RegistrationViewImp: UIView, RegistrationView {
 
+    @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var iconView: UIImageView!
     @IBOutlet private var loginTextField: UITextField!
