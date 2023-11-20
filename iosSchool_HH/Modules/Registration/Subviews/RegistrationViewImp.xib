@@ -20,18 +20,25 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registration-icon" translatesAutoresizingMaskIntoConstraints="NO" id="BFR-E7-PHt">
+                    <rect key="frame" x="160" y="335.66666666666669" width="110" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="qSr-Jd-a1B"/>
+                        <constraint firstAttribute="width" constant="110" id="qnA-QS-cca"/>
+                    </constraints>
+                </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FjW-nw-83l">
                     <rect key="frame" x="32" y="481.66666666666669" width="366" height="34.000000000000057"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdF-Oy-IQh">
-                    <rect key="frame" x="32" y="585.66666666666663" width="366" height="34"/>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNU-V2-1Kn">
+                    <rect key="frame" x="32" y="533.66666666666663" width="366" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNU-V2-1Kn">
-                    <rect key="frame" x="32" y="533.66666666666663" width="366" height="34"/>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdF-Oy-IQh">
+                    <rect key="frame" x="32" y="585.66666666666663" width="366" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -45,14 +52,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BFR-E7-PHt">
-                    <rect key="frame" x="160" y="335.66666666666669" width="110" height="110"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="110" id="qSr-Jd-a1B"/>
-                        <constraint firstAttribute="width" constant="110" id="qnA-QS-cca"/>
-                    </constraints>
-                </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NMS-Zg-flH">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registration-background" translatesAutoresizingMaskIntoConstraints="NO" id="NMS-Zg-flH">
                     <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                 </imageView>
             </subviews>
@@ -99,6 +99,8 @@
         </view>
     </objects>
     <resources>
+        <image name="registration-background" width="390" height="844"/>
+        <image name="registration-icon" width="111" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

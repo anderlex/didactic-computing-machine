@@ -14,6 +14,9 @@
             <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auth-background" translatesAutoresizingMaskIntoConstraints="NO" id="6Yq-Qc-VfM">
+                    <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6KU-8D-pIj">
                     <rect key="frame" x="0.0" y="215" width="430" height="144.33333333333337"/>
                     <subviews>
@@ -73,9 +76,6 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Yq-Qc-VfM">
-                    <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -115,6 +115,7 @@
         </view>
     </objects>
     <resources>
+        <image name="auth-background" width="390" height="844"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
