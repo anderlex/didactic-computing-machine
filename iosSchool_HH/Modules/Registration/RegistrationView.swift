@@ -7,6 +7,22 @@
 
 import UIKit
 
-protocol RegistrationView: UIView {}
+protocol RegistrationView: UIView {
 
-class RegistrationViewImp: UIView, RegistrationView {}
+    func setView()
+}
+
+class RegistrationViewImp: UIView, RegistrationView {
+
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var iconView: UIImageView!
+    @IBOutlet private var loginTextField: UITextField!
+    @IBOutlet private var passwordTextField: UITextField!
+    @IBOutlet private var passwordAgainTextField: UITextField!
+    @IBOutlet private var doneButton: UIButton!
+    @IBOutlet private var backButton: UIButton!
+
+    func setView() {
+        <#code#>
+    }
+}
