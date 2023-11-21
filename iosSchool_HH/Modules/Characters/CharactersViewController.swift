@@ -25,11 +25,11 @@ class CharactersViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .red
-        get()
+        getChar(id: 20)
     }
 
-    func get() {
-        dataProvider.getCharacter { character, error in
+    func getChar(id: Int) {
+        dataProvider.getCharacter(id: id) { character, error in
             character?.description() ?? print("Нет персонажа")
             print(error?.rawValue ?? "Нет ошибки")
         }

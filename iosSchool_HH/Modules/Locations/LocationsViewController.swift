@@ -16,7 +16,7 @@ class LocationsViewController: UIViewController {
 
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -29,6 +29,7 @@ class LocationsViewController: UIViewController {
 
     func getLocations() {
         dataProvider.getLocationsList { locationsList, error in
+            locationsList?.description() ?? print("No locations")
             print(error?.rawValue ?? "No errors")
         }
     }

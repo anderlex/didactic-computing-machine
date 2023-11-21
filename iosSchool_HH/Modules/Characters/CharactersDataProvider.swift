@@ -8,9 +8,7 @@
 import Foundation
 
 protocol CharactersDataProvider {
-    func getCharacter(
-        onRequestCompleted: @escaping (Character?, ApiError?) -> Void
-    )
+    func getCharacter(id: Int, onRequestCompleted: @escaping (Character?, ApiError?) -> Void)
 }
 
 class CharactersDataProviderImp: CharactersDataProvider {
@@ -20,9 +18,7 @@ class CharactersDataProviderImp: CharactersDataProvider {
         self.apiClient = apiClient
     }
 
-    func getCharacter(
-        onRequestCompleted: @escaping (Character?, ApiError?) -> Void
-    ) {
-        apiClient.getCharacter(onRequestCompleted: onRequestCompleted)
+    func getCharacter(id: Int, onRequestCompleted: @escaping (Character?, ApiError?) -> Void) {
+        apiClient.getCharacter(id: id, onRequestCompleted: onRequestCompleted)
     }
 }

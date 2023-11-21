@@ -19,8 +19,7 @@ struct LocationsList: Decodable {
     let info: Info
     let results: [Location]
 
-    enum CodingKeys: String, CodingKey {
-        case info
-        case results
+    func description() {
+        print("info: \(info)")
     }
 }

@@ -23,7 +23,7 @@ class AppCoordinator: BaseCoordinator<CoordinatorContext> {
     }
 
     private func authBootstrap() {
-        setRoot(viewController: assembly.charactersCoordinator().make())
+        setRoot(viewController: assembly.locationsCoordinator().make())
     }
 
     private func setRoot(viewController: UIViewController?) {

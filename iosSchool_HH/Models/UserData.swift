@@ -8,11 +8,6 @@
 import Foundation
 
 struct UserData: Codable {
-    var username: String
-    var password: String
-
-    enum CodingKeys: String, CodingKey {
-        case username
-        case password
-    }
+    let username: String
+    let password: String
 }

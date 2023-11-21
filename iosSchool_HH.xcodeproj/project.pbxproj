@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F332D6B2B0D08B900F8DBD4 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F332D6A2B0D08B900F8DBD4 /* Character.swift */; };
 		3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */; };
 		3FB73C6F2AE9192400892419 /* CharacterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */; };
 		3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C742AEFC59B00892419 /* Assembly.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F332D6A2B0D08B900F8DBD4 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 		3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGenerator.swift; sourceTree = "<group>"; };
 		3FB73C742AEFC59B00892419 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = ../Assembly.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */,
+				3F332D6A2B0D08B900F8DBD4 /* Character.swift */,
 				3FB73CA32B02514D00892419 /* Location.swift */,
 				3FB73CA52B0259CF00892419 /* LocationsList.swift */,
 				3FB73CA72B025A3D00892419 /* TokenResponse.swift */,
@@ -406,6 +409,7 @@
 				3FB73CC12B06260900892419 /* CharactersDataProvider.swift in Sources */,
 				3FB73CBB2B06254300892419 /* CharactersViewData.swift in Sources */,
 				3FB73CD32B0919F000892419 /* LocationsDataProvider.swift in Sources */,
+				3F332D6B2B0D08B900F8DBD4 /* Character.swift in Sources */,
 				3FB73C8C2AFD12F600892419 /* SplashViewData.swift in Sources */,
 				3FB73CAB2B025AF300892419 /* ApiClient.swift in Sources */,
 			);
