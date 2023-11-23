@@ -25,11 +25,12 @@ class RegistrationViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .green
-        userRegistration(username: "anderlex", password: "12345678")
+        let userData = UserData(username: "anderlex", password: "12345678")
+        userRegistration(userdata: userData)
     }
 
-    func userRegistration(username: String, password: String) {
-        dataProvider.registration(username: username, password: password) { token, error in
+    func userRegistration(userdata: UserData) {
+        dataProvider.registration(userdata: userdata) { token, error in
             print(token ?? "Hет токена")
             print(error?.rawValue ?? "Нет ошибки")
         }

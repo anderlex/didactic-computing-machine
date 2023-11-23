@@ -9,21 +9,18 @@ import Foundation
 
 protocol RegistrationApiClient {
     func registration(
-        username: String,
-        password: String,
+        userdata: UserData,
         onRequestCompleted: @escaping (TokenResponse?, ApiError?) -> Void
     )
 }
 
 extension ApiClient: RegistrationApiClient {
     func registration(
-        username: String,
-        password: String,
+        userdata: UserData,
         onRequestCompleted: @escaping (TokenResponse?, ApiError?) -> Void
     ) {
-        let url = NetworkConstants.URLStrings.nanoPost + "/auth/register?username=\(username)&password=\(password)"
-        let userData = UserData(username: username, password: password)
-        let data = try? JSONEncoder().encode(userData)
+        let url = NetworkConstants.URLStrings.nanoPost + "/auth/register?username=\(userdata.username)&password=\(userdata.password)"
+        let data = try? JSONEncoder().encode(userdata)
         performRequest(url: url, data: data, method: .post) { (result: Result<TokenResponse, ApiError>) in
             switch result {
             case .success(let token):

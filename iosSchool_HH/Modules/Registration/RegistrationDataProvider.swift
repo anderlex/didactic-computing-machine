@@ -9,8 +9,7 @@ import Foundation
 
 protocol RegistrationDataProvider {
     func registration(
-        username: String,
-        password: String,
+        userdata: UserData,
         onRequestCompleted: @escaping (TokenResponse?, ApiError?) -> Void
     )
 }
@@ -24,10 +23,9 @@ class RegistrationDataProviderImp: RegistrationDataProvider {
     }
 
     func registration(
-        username: String,
-        password: String,
+        userdata: UserData,
         onRequestCompleted: @escaping (TokenResponse?, ApiError?) -> Void
     ) {
-        apiClient.registration(username: username, password: password, onRequestCompleted: onRequestCompleted)
+        apiClient.registration(userdata: userdata, onRequestCompleted: onRequestCompleted)
     }
 }
