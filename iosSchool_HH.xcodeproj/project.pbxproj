@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F332D6D2B0F884500F8DBD4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F332D6C2B0F884500F8DBD4 /* TabBarController.swift */; };
+		3F332D702B0F88A600F8DBD4 /* RootTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F332D6F2B0F88A600F8DBD4 /* RootTab.swift */; };
+		3F332D722B0F894200F8DBD4 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F332D712B0F894200F8DBD4 /* BaseNavigationController.swift */; };
+		3F332D752B0F924600F8DBD4 /* SPIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = 3F332D742B0F924600F8DBD4 /* SPIndicator */; };
+		3F332D782B0F950800F8DBD4 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3F332D772B0F950800F8DBD4 /* PKHUD */; };
 		3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */; };
 		3FB73C6F2AE9192400892419 /* CharacterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */; };
 		3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C742AEFC59B00892419 /* Assembly.swift */; };
@@ -47,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F332D6C2B0F884500F8DBD4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3F332D6F2B0F88A600F8DBD4 /* RootTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTab.swift; sourceTree = "<group>"; };
+		3F332D712B0F894200F8DBD4 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 		3FB73C6E2AE9192400892419 /* CharacterGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGenerator.swift; sourceTree = "<group>"; };
 		3FB73C742AEFC59B00892419 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = ../Assembly.swift; sourceTree = "<group>"; };
@@ -93,12 +101,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F332D752B0F924600F8DBD4 /* SPIndicator in Frameworks */,
+				3F332D782B0F950800F8DBD4 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F332D6E2B0F889700F8DBD4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3F332D6F2B0F88A600F8DBD4 /* RootTab.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		3FB73C7A2AF9222B00892419 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +207,8 @@
 			children = (
 				3FB73C762AF9184F00892419 /* BaseCoordinator.swift */,
 				3FB73CCB2B06409500892419 /* BaseViewController.swift */,
+				3F332D6C2B0F884500F8DBD4 /* TabBarController.swift */,
+				3F332D712B0F894200F8DBD4 /* BaseNavigationController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -220,6 +240,7 @@
 		3FD1F2A82AE119EE00C8563F /* iosSchool_HH */ = {
 			isa = PBXGroup;
 			children = (
+				3F332D6E2B0F889700F8DBD4 /* UIKit */,
 				3FB73CCA2B06406A00892419 /* Common */,
 				3FB73CB32B026B6F00892419 /* Characters */,
 				3FB73CB22B026B6600892419 /* Locations */,
@@ -257,6 +278,10 @@
 			dependencies = (
 			);
 			name = iosSchool_HH;
+			packageProductDependencies = (
+				3F332D742B0F924600F8DBD4 /* SPIndicator */,
+				3F332D772B0F950800F8DBD4 /* PKHUD */,
+			);
 			productName = iosSchool_HH;
 			productReference = 3FD1F2A62AE119EE00C8563F /* iosSchool_HH.app */;
 			productType = "com.apple.product-type.application";
@@ -285,6 +310,10 @@
 				Base,
 			);
 			mainGroup = 3FD1F29D2AE119EE00C8563F;
+			packageReferences = (
+				3F332D732B0F924600F8DBD4 /* XCRemoteSwiftPackageReference "SPIndicator" */,
+				3F332D762B0F950800F8DBD4 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 3FD1F2A72AE119EE00C8563F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +370,7 @@
 				3FB73CAD2B025B5F00892419 /* NetworkConstants.swift in Sources */,
 				3FB73C902AFD137E00892419 /* SplashViewController.swift in Sources */,
 				3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */,
+				3F332D702B0F88A600F8DBD4 /* RootTab.swift in Sources */,
 				3FB73CCC2B06409600892419 /* BaseViewController.swift in Sources */,
 				3FB73C922AFD140E00892419 /* SplashCoordinator.swift in Sources */,
 				3FB73C7D2AF922D600892419 /* AuthViewController.swift in Sources */,
@@ -349,9 +379,11 @@
 				3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */,
 				3FB73C992AFE544300892419 /* RegistrationDataProvider.swift in Sources */,
 				3FB73C792AF9193900892419 /* AppCoordinator.swift in Sources */,
+				3F332D722B0F894200F8DBD4 /* BaseNavigationController.swift in Sources */,
 				3FB73CAF2B025CB500892419 /* ApiError.swift in Sources */,
 				3FB73C812AF9242700892419 /* AuthViewData.swift in Sources */,
 				3FB73CA82B025A3D00892419 /* TokenResponse.swift in Sources */,
+				3F332D6D2B0F884500F8DBD4 /* TabBarController.swift in Sources */,
 				3FB73C7F2AF9230D00892419 /* AuthView.swift in Sources */,
 				3FB73C832AF9245300892419 /* AuthDataProvider.swift in Sources */,
 				3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */,
@@ -582,6 +614,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F332D732B0F924600F8DBD4 /* XCRemoteSwiftPackageReference "SPIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPIndicator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.5;
+			};
+		};
+		3F332D762B0F950800F8DBD4 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F332D742B0F924600F8DBD4 /* SPIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F332D732B0F924600F8DBD4 /* XCRemoteSwiftPackageReference "SPIndicator" */;
+			productName = SPIndicator;
+		};
+		3F332D772B0F950800F8DBD4 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F332D762B0F950800F8DBD4 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FD1F29E2AE119EE00C8563F /* Project object */;
 }
