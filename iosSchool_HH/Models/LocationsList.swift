@@ -18,8 +18,4 @@ struct LocationsList: Decodable {
 
     let info: Info
     let results: [Location]
-
-    func description() {
-        print("info: \(info)")
-    }
 }
