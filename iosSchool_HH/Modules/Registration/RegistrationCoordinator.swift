@@ -14,6 +14,6 @@ class RegistrationCoordinator: BaseCoordinator<RegistrationCoordinator.Context> 
     }
 
     override func make() -> UIViewController? {
-        assembly.registrationVC()
+        assembly.registrationVC(onRegistrationSuccess: context.onRegistrationSuccess)
     }
 }
