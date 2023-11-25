@@ -9,4 +9,8 @@ import UIKit
 
 protocol CharactersView: UIView {}
 
-class CharactersViewImp: UIView, AuthView {}
+class CharactersViewImp: UIView, AuthView {
+    var delegate: AuthViewDelegate?
+
+    func setView() {}
+}

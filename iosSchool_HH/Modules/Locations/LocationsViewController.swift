@@ -23,14 +23,5 @@ class LocationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        getLocations()
-    }
-
-    func getLocations() {
-        dataProvider.getLocationsList { locationsList, error in
-            locationsList?.description() ?? print("No locations")
-            print(error?.rawValue ?? "No errors")
-        }
     }
 }

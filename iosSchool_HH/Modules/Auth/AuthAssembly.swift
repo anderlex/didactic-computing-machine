@@ -14,7 +14,6 @@ protocol AuthAssembly {
 }
 
 extension Assembly: AuthAssembly {
-
     func authVC(onOpenLogin: (() -> Void)?) -> AuthViewController<AuthViewImp> {
         .init(dataProvider: authDataProvider(), onOpenLogin: onOpenLogin)
     }
