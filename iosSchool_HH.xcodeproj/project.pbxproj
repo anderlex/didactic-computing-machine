@@ -29,12 +29,6 @@
 		3FB73C902AFD137E00892419 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C8F2AFD137E00892419 /* SplashViewController.swift */; };
 		3FB73C922AFD140E00892419 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C912AFD140E00892419 /* SplashCoordinator.swift */; };
 		3FB73C942AFD145D00892419 /* SplashAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C932AFD145D00892419 /* SplashAssembly.swift */; };
-		3FB73C972AFE540300892419 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C962AFE540300892419 /* RegistrationViewController.swift */; };
-		3FB73C992AFE544300892419 /* RegistrationDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C982AFE544300892419 /* RegistrationDataProvider.swift */; };
-		3FB73C9B2AFE54B400892419 /* RegistrationViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C9A2AFE54B400892419 /* RegistrationViewData.swift */; };
-		3FB73C9D2AFE54D900892419 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C9C2AFE54D900892419 /* RegistrationView.swift */; };
-		3FB73C9F2AFE551D00892419 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C9E2AFE551D00892419 /* RegistrationCoordinator.swift */; };
-		3FB73CA12AFE559800892419 /* RegistrationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CA02AFE559800892419 /* RegistrationAssembly.swift */; };
 		3FB73CA42B02514D00892419 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CA32B02514D00892419 /* Location.swift */; };
 		3FB73CA62B0259CF00892419 /* LocationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CA52B0259CF00892419 /* LocationsList.swift */; };
 		3FB73CA82B025A3D00892419 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CA72B025A3D00892419 /* TokenResponse.swift */; };
@@ -49,6 +43,11 @@
 		3FD1F2AE2AE119EE00C8563F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AD2AE119EE00C8563F /* ViewController.swift */; };
 		3FD1F2B32AE119F200C8563F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD1F2B22AE119F200C8563F /* Assets.xcassets */; };
 		3FD1F2B62AE119F200C8563F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD1F2B42AE119F200C8563F /* LaunchScreen.storyboard */; };
+		3FFE2A692B12223D00EEF8BF /* Characters in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE2A682B12223D00EEF8BF /* Characters */; };
+		3FFE2A6B2B12225900EEF8BF /* Locations in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE2A6A2B12225900EEF8BF /* Locations */; };
+		3FFE2A7F2B1224A800EEF8BF /* LocationsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE2A7D2B1224A800EEF8BF /* LocationsApiClient.swift */; };
+		3FFE2A802B1224A800EEF8BF /* CharactersApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE2A7E2B1224A800EEF8BF /* CharactersApiClient.swift */; };
+		3FFE2A822B1224B700EEF8BF /* RegistrationApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE2A812B1224B700EEF8BF /* RegistrationApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,12 +71,6 @@
 		3FB73C8F2AFD137E00892419 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		3FB73C912AFD140E00892419 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		3FB73C932AFD145D00892419 /* SplashAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembly.swift; sourceTree = "<group>"; };
-		3FB73C962AFE540300892419 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
-		3FB73C982AFE544300892419 /* RegistrationDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDataProvider.swift; sourceTree = "<group>"; };
-		3FB73C9A2AFE54B400892419 /* RegistrationViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewData.swift; sourceTree = "<group>"; };
-		3FB73C9C2AFE54D900892419 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		3FB73C9E2AFE551D00892419 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
-		3FB73CA02AFE559800892419 /* RegistrationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAssembly.swift; sourceTree = "<group>"; };
 		3FB73CA32B02514D00892419 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3FB73CA52B0259CF00892419 /* LocationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsList.swift; sourceTree = "<group>"; };
 		3FB73CA72B025A3D00892419 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
@@ -94,6 +87,11 @@
 		3FD1F2B22AE119F200C8563F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD1F2B52AE119F200C8563F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD1F2B72AE119F200C8563F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FFE2A682B12223D00EEF8BF /* Characters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Characters; sourceTree = "<group>"; };
+		3FFE2A6A2B12225900EEF8BF /* Locations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Locations; sourceTree = "<group>"; };
+		3FFE2A7D2B1224A800EEF8BF /* LocationsApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsApiClient.swift; sourceTree = "<group>"; };
+		3FFE2A7E2B1224A800EEF8BF /* CharactersApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersApiClient.swift; sourceTree = "<group>"; };
+		3FFE2A812B1224B700EEF8BF /* RegistrationApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +118,8 @@
 		3FB73C7A2AF9222B00892419 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3FB73C952AFE53DF00892419 /* Registration */,
+				3FFE2A6A2B12225900EEF8BF /* Locations */,
+				3FFE2A682B12223D00EEF8BF /* Characters */,
 				3FB73C882AFD128100892419 /* Splash */,
 				3FB73C7B2AF9225500892419 /* Auth */,
 			);
@@ -154,19 +153,6 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		3FB73C952AFE53DF00892419 /* Registration */ = {
-			isa = PBXGroup;
-			children = (
-				3FB73C962AFE540300892419 /* RegistrationViewController.swift */,
-				3FB73C982AFE544300892419 /* RegistrationDataProvider.swift */,
-				3FB73C9A2AFE54B400892419 /* RegistrationViewData.swift */,
-				3FB73C9C2AFE54D900892419 /* RegistrationView.swift */,
-				3FB73C9E2AFE551D00892419 /* RegistrationCoordinator.swift */,
-				3FB73CA02AFE559800892419 /* RegistrationAssembly.swift */,
-			);
-			path = Registration;
-			sourceTree = "<group>";
-		};
 		3FB73CA22B02511600892419 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,26 +166,15 @@
 		3FB73CA92B025AE200892419 /* ApiClient */ = {
 			isa = PBXGroup;
 			children = (
+				3FFE2A812B1224B700EEF8BF /* RegistrationApiClient.swift */,
+				3FFE2A7E2B1224A800EEF8BF /* CharactersApiClient.swift */,
+				3FFE2A7D2B1224A800EEF8BF /* LocationsApiClient.swift */,
 				3FB73CAA2B025AF300892419 /* ApiClient.swift */,
 				3FB73CAC2B025B5F00892419 /* NetworkConstants.swift */,
 				3FB73CAE2B025CB500892419 /* ApiError.swift */,
 				3FB73CB02B02601100892419 /* AuthApiClient.swift */,
 			);
 			path = ApiClient;
-			sourceTree = "<group>";
-		};
-		3FB73CB22B026B6600892419 /* Locations */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Locations;
-			sourceTree = "<group>";
-		};
-		3FB73CB32B026B6F00892419 /* Characters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Characters;
 			sourceTree = "<group>";
 		};
 		3FB73CCA2B06406A00892419 /* Common */ = {
@@ -242,8 +217,6 @@
 			children = (
 				3F332D6E2B0F889700F8DBD4 /* UIKit */,
 				3FB73CCA2B06406A00892419 /* Common */,
-				3FB73CB32B026B6F00892419 /* Characters */,
-				3FB73CB22B026B6600892419 /* Locations */,
 				3FB73CA92B025AE200892419 /* ApiClient */,
 				3FB73CA22B02511600892419 /* Models */,
 				3FB73C7A2AF9222B00892419 /* Modules */,
@@ -329,7 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD1F2B62AE119F200C8563F /* LaunchScreen.storyboard in Resources */,
+				3FFE2A6B2B12225900EEF8BF /* Locations in Resources */,
 				3FD1F2B32AE119F200C8563F /* Assets.xcassets in Resources */,
+				3FFE2A692B12223D00EEF8BF /* Characters in Resources */,
 				3FB73CCF2B0642E700892419 /* AuthViewImp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,10 +349,9 @@
 				3FB73CCC2B06409600892419 /* BaseViewController.swift in Sources */,
 				3FB73C922AFD140E00892419 /* SplashCoordinator.swift in Sources */,
 				3FB73C7D2AF922D600892419 /* AuthViewController.swift in Sources */,
+				3FFE2A802B1224A800EEF8BF /* CharactersApiClient.swift in Sources */,
 				3FB73C872AF9261200892419 /* AuthCoordinator.swift in Sources */,
-				3FB73C9F2AFE551D00892419 /* RegistrationCoordinator.swift in Sources */,
 				3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */,
-				3FB73C992AFE544300892419 /* RegistrationDataProvider.swift in Sources */,
 				3FB73C792AF9193900892419 /* AppCoordinator.swift in Sources */,
 				3F332D722B0F894200F8DBD4 /* BaseNavigationController.swift in Sources */,
 				3FB73CAF2B025CB500892419 /* ApiError.swift in Sources */,
@@ -387,16 +361,14 @@
 				3FB73C7F2AF9230D00892419 /* AuthView.swift in Sources */,
 				3FB73C832AF9245300892419 /* AuthDataProvider.swift in Sources */,
 				3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */,
-				3FB73C9D2AFE54D900892419 /* RegistrationView.swift in Sources */,
-				3FB73C9B2AFE54B400892419 /* RegistrationViewData.swift in Sources */,
 				3FB73CA42B02514D00892419 /* Location.swift in Sources */,
 				3FB73C6F2AE9192400892419 /* CharacterGenerator.swift in Sources */,
+				3FFE2A7F2B1224A800EEF8BF /* LocationsApiClient.swift in Sources */,
 				3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */,
 				3FB73C852AF9249200892419 /* AuthAssembly.swift in Sources */,
 				3FB73CA62B0259CF00892419 /* LocationsList.swift in Sources */,
 				3FB73C8A2AFD12A700892419 /* SplashDataProvider.swift in Sources */,
-				3FB73CA12AFE559800892419 /* RegistrationAssembly.swift in Sources */,
-				3FB73C972AFE540300892419 /* RegistrationViewController.swift in Sources */,
+				3FFE2A822B1224B700EEF8BF /* RegistrationApiClient.swift in Sources */,
 				3FB73C942AFD145D00892419 /* SplashAssembly.swift in Sources */,
 				3FB73C8C2AFD12F600892419 /* SplashViewData.swift in Sources */,
 				3FB73CAB2B025AF300892419 /* ApiClient.swift in Sources */,
