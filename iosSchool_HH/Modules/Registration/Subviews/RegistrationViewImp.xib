@@ -31,28 +31,28 @@
                         <constraint firstAttribute="width" constant="110" id="qnA-QS-cca"/>
                     </constraints>
                 </imageView>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FjW-nw-83l">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FjW-nw-83l">
                     <rect key="frame" x="32" y="423" width="326" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="2Wk-ZT-e88"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNU-V2-1Kn">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNU-V2-1Kn">
                     <rect key="frame" x="32" y="481" width="326" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="95t-JS-5lg"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdF-Oy-IQh">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Повторите пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdF-Oy-IQh">
                     <rect key="frame" x="32" y="539" width="326" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="fst-mb-HYi"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2K-ja-L2Y">
@@ -62,7 +62,7 @@
                     </constraints>
                     <color key="tintColor" red="0.32941176470588235" green="0.50588235294117645" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Button">
+                    <buttonConfiguration key="configuration" style="filled" title="Готово">
                         <color key="baseBackgroundColor" red="0.3294117647" green="0.50588235290000005" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                     </buttonConfiguration>
                 </button>
@@ -73,7 +73,7 @@
                     </constraints>
                     <color key="tintColor" red="0.32941176470588235" green="0.50588235294117645" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Button">
+                    <buttonConfiguration key="configuration" style="filled" title="Назад">
                         <color key="baseBackgroundColor" red="0.3294117647" green="0.50588235290000005" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                     </buttonConfiguration>
                 </button>
