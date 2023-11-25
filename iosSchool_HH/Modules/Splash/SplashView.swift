@@ -7,6 +7,14 @@
 
 import UIKit
 
-protocol SplashView: UIView {}
+protocol SplashView: UIView {
 
-class SplashViewImp: UIView, SplashView {}
+    func setView()
+}
+
+class SplashViewImp: UIView, SplashView {
+
+    @IBOutlet private var imageLogo: UIImageView!
+
+    func setView() {}
+}
