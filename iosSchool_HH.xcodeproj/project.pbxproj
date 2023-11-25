@@ -117,25 +117,9 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		3F332D7A2B12194700F8DBD4 /* Locations */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Locations;
-			sourceTree = "<group>";
-		};
-		3F332D7B2B12194D00F8DBD4 /* Characters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Characters;
-			sourceTree = "<group>";
-		};
 		3FB73C7A2AF9222B00892419 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3F332D7B2B12194D00F8DBD4 /* Characters */,
-				3F332D7A2B12194700F8DBD4 /* Locations */,
 				3FB73C952AFE53DF00892419 /* Registration */,
 				3FB73C882AFD128100892419 /* Splash */,
 				3FB73C7B2AF9225500892419 /* Auth */,

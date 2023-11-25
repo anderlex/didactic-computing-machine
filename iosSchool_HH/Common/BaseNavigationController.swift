@@ -28,4 +28,3 @@ class BaseNavigationController: UINavigationController, UINavigationControllerDe
         viewControllers.count > 1
     }
 }
-
