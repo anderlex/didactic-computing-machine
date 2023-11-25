@@ -39,10 +39,8 @@ class RegistrationViewImp: UIView, RegistrationView {
         setLeftAlignment(textField: passwordAgainTextField)
 
         setShadowsButton(button: doneButton)
-        doneButton.clipsToBounds = true
         doneButton.layer.cornerRadius = 10
         setShadowsButton(button: backButton)
-        backButton.clipsToBounds = true
         backButton.layer.cornerRadius = 10
     }
 
