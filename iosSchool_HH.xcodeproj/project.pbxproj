@@ -55,6 +55,7 @@
 		3FB73CB12B02601100892419 /* AuthApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CB02B02601100892419 /* AuthApiClient.swift */; };
 		3FB73CCC2B06409600892419 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73CCB2B06409500892419 /* BaseViewController.swift */; };
 		3FB73CCF2B0642E700892419 /* AuthViewImp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB73CCE2B0642E700892419 /* AuthViewImp.xib */; };
+		3FB73CDE2B0B615500892419 /* RegistrationViewImp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB73CDD2B0B615500892419 /* RegistrationViewImp.xib */; };
 		3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */; };
 		3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */; };
 		3FD1F2B32AE119F200C8563F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD1F2B22AE119F200C8563F /* Assets.xcassets */; };
@@ -113,6 +114,7 @@
 		3FB73CB02B02601100892419 /* AuthApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiClient.swift; sourceTree = "<group>"; };
 		3FB73CCB2B06409500892419 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3FB73CCE2B0642E700892419 /* AuthViewImp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewImp.xib; sourceTree = "<group>"; };
+		3FB73CDD2B0B615500892419 /* RegistrationViewImp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewImp.xib; sourceTree = "<group>"; };
 		3FD1F2A62AE119EE00C8563F /* iosSchool_HH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosSchool_HH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +227,14 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		3FB73C952AFE53DF00892419 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				3FB73CDA2B0B5DF100892419 /* Subviews */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		3FB73CA22B02511600892419 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +276,14 @@
 			isa = PBXGroup;
 			children = (
 				3FB73CCE2B0642E700892419 /* AuthViewImp.xib */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		3FB73CDA2B0B5DF100892419 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				3FB73CDD2B0B615500892419 /* RegistrationViewImp.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -373,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB73CDE2B0B615500892419 /* RegistrationViewImp.xib in Resources */,
 				3FD1F2B62AE119F200C8563F /* LaunchScreen.storyboard in Resources */,
 				3FD1F2B32AE119F200C8563F /* Assets.xcassets in Resources */,
 				3FB73CCF2B0642E700892419 /* AuthViewImp.xib in Resources */,

@@ -150,6 +150,7 @@
         </view>
     </objects>
     <resources>
+        <image name="auth-background" width="390" height="844"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController<View: RegistrationView>: BaseViewController<View> {
 
     private let dataProvider: RegistrationDataProvider
     var onRegistrationSuccess: (() -> Void)?
