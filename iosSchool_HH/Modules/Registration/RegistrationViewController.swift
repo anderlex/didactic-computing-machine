@@ -25,6 +25,7 @@ class RegistrationViewController<View: RegistrationView>: BaseViewController<Vie
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        rootView.setView()
     }
 
     override func viewDidAppear(_ animated: Bool) {

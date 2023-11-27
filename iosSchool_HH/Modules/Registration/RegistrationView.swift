@@ -98,10 +98,11 @@ class RegistrationViewImp: UIView, RegistrationView {
         button.layer.shadowOpacity = 1
         button.layer.shadowRadius = 8
         button.layer.shadowOffset = CGSize(width: 0, height: 5)
+        button.layer.backgroundColor = UIColor(red: 0.329, green: 0.506, blue: 0.706, alpha: 1).cgColor
+
     }
 
     private func setBorders(view: UIView) {
-        view.clipsToBounds = true
         view.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
         view.layer.cornerRadius = 15
         view.layer.borderWidth = 1
