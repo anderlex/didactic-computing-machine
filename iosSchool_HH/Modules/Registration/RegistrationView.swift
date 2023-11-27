@@ -8,12 +8,19 @@
 import UIKit
 
 protocol RegistrationView: UIView {
+    var delegate: RegistrationViewDelegate? { get set }
 
     func setView()
 }
 
+protocol RegistrationViewDelegate: AnyObject {
+    func doneButtonDidTap()
+    func backButtonDidTap()
+}
+
 class RegistrationViewImp: UIView, RegistrationView {
 
+    @IBOutlet private var scrollView: UIScrollView!
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var iconView: UIImageView!
@@ -23,7 +30,18 @@ class RegistrationViewImp: UIView, RegistrationView {
     @IBOutlet private var doneButton: UIButton!
     @IBOutlet private var backButton: UIButton!
 
+    weak var delegate: RegistrationViewDelegate?
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     func setView() {
+
+        isUserInteractionEnabled = true
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(viewDidTap))
+        addGestureRecognizer(recognizer)
+
         imageView.contentMode = .scaleAspectFill
 
         setBorders(view: loginTextField)
@@ -42,9 +60,24 @@ class RegistrationViewImp: UIView, RegistrationView {
         doneButton.layer.cornerRadius = 10
         setShadowsButton(button: backButton)
         backButton.layer.cornerRadius = 10
+
+        doneButton.addTarget(self, action: #selector(doneButtonDidTap), for: .touchUpInside)
+
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillShow),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil
+        )
+
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillHide),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil)
     }
 
-// MARK: - Private methods
+    // MARK: - Private methods
 
     private func setShadowsTextField(textField: UITextField) {
         textField.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
@@ -73,5 +106,41 @@ class RegistrationViewImp: UIView, RegistrationView {
         view.layer.cornerRadius = 15
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+    }
+
+    @IBAction
+    private func doneButtonDidTap() {
+        loginTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        passwordAgainTextField.resignFirstResponder()
+    }
+
+    @objc
+    private func backButtonDidTap() {}
+
+    @objc
+    private func keyboardWillShow(notification: Notification) {
+        guard let userInfo = notification.userInfo else {
+            return
+        }
+        guard let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {
+            return
+        }
+        let keyboardHeight = keyboardFrame.cgRectValue.height
+        scrollView.contentInset.bottom = keyboardHeight
+        scrollView.verticalScrollIndicatorInsets.bottom = keyboardHeight
+    }
+
+    @objc
+    private func keyboardWillHide() {
+        scrollView.contentInset = .zero
+        scrollView.verticalScrollIndicatorInsets = .zero
+    }
+
+    @objc
+    private func viewDidTap() {
+        loginTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        passwordAgainTextField.resignFirstResponder()
     }
 }
