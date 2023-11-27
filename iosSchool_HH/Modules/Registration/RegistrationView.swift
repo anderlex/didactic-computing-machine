@@ -44,16 +44,16 @@ class RegistrationViewImp: UIView, RegistrationView {
 
         imageView.contentMode = .scaleAspectFill
 
-        setBorders(view: loginTextField)
         setShadowsTextField(textField: loginTextField)
+        setBorders(view: loginTextField)
         setLeftAlignment(textField: loginTextField)
 
-        setBorders(view: passwordTextField)
         setShadowsTextField(textField: passwordTextField)
+        setBorders(view: passwordTextField)
         setLeftAlignment(textField: passwordTextField)
 
-        setBorders(view: passwordAgainTextField)
         setShadowsTextField(textField: passwordAgainTextField)
+        setBorders(view: passwordAgainTextField)
         setLeftAlignment(textField: passwordAgainTextField)
 
         setShadowsButton(button: doneButton)
