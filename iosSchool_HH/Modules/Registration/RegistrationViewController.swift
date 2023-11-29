@@ -25,7 +25,6 @@ class RegistrationViewController<View: RegistrationView>: BaseViewController<Vie
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         rootView.setView()
     }
 
