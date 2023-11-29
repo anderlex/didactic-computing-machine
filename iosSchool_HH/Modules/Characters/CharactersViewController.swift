@@ -24,7 +24,7 @@ class CharactersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
+        view.backgroundColor = .magenta
         getCharacter(id: 20)
     }
 
