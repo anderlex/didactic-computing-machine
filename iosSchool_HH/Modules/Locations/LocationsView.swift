@@ -74,6 +74,7 @@ extension LocationsViewImp: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: LocationsCell.className) else {
             return UITableViewCell()
         }
+        cell.backgroundColor = .clear
         (cell as? LocationsCell)?.data = viewData.cellsData[indexPath.row]
         return cell
     }
@@ -89,5 +90,9 @@ extension LocationsViewImp: UITableViewDelegate {
             return
         }
         selectLocation?(viewData.cellsData[indexPath.row])
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40
     }
 }

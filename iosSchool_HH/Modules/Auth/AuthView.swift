@@ -44,13 +44,23 @@ class AuthViewImp: UIView, AuthView {
 
         imageView.image = UIImage(named: "auth-background")
         imageView.contentMode = .scaleAspectFill
+        labelView.layer.backgroundColor = UIColor(red: 0.769, green: 0.769, blue: 0.769, alpha: 0.65).cgColor
         labelView.layer.cornerRadius = 10
-        labelView.layer.masksToBounds = true
         labelView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         labelView.layer.shadowOpacity = 1
         labelView.layer.shadowRadius = 10
         labelView.layer.shadowOffset = CGSize(width: 0, height: 8)
-        labelView.backgroundColor = UIColor(red: 196, green: 196, blue: 196, alpha: 0.65)
+        labelView.clipsToBounds = false
+        setBorders(view: loginTextField)
+        setShadowsTextField(textField: loginTextField)
+        setLeftAlignment(textField: loginTextField)
+        setBorders(view: passwordTextField)
+        setShadowsTextField(textField: passwordTextField)
+        setLeftAlignment(textField: passwordTextField)
+        loginButton.layer.cornerRadius = 10
+        setShadowsButton(button: loginButton)
+        registrationButton.layer.cornerRadius = 10
+        setShadowsButton(button: registrationButton)
 
         registrationButton.addTarget(self, action: #selector(registrationDidTap), for: .touchUpInside)
 
@@ -69,6 +79,34 @@ class AuthViewImp: UIView, AuthView {
     }
 
     // MARK: - Private
+
+    private func setBorders(view: UIView) {
+        view.layer.backgroundColor = UIColor(red: 0.897, green: 0.897, blue: 0.897, alpha: 1).cgColor
+        view.layer.cornerRadius = 15
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+    }
+
+    private func setShadowsTextField(textField: UITextField) {
+        textField.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        textField.layer.shadowOpacity = 1
+        textField.layer.shadowRadius = 5
+        textField.layer.shadowOffset = CGSize(width: 0, height: 8)
+        textField.borderStyle = .none
+        textField.layer.backgroundColor = UIColor(.white).cgColor
+    }
+
+    private func setLeftAlignment(textField: UITextField) {
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 20))
+        textField.leftViewMode = .always
+    }
+
+    private func setShadowsButton(button: UIButton) {
+        button.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        button.layer.shadowOpacity = 1
+        button.layer.shadowRadius = 8
+        button.layer.shadowOffset = CGSize(width: 0, height: 5)
+    }
 
     @IBAction
     private func loginDidTap(sender: UIButton) {
