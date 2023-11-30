@@ -92,7 +92,7 @@ extension LocationsViewImp: UITableViewDelegate {
         selectLocation?(viewData.cellsData[indexPath.row])
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 40
+//    }
 }

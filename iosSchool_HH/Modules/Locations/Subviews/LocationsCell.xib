@@ -17,8 +17,8 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hs-3P-iqR">
-                        <rect key="frame" x="16" y="44" width="288" height="0.0"/>
-                        <color key="backgroundColor" red="0.090196078431372548" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="16" y="41.666666666666664" width="288" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" id="JlI-Gz-vV3"/>
                         </constraints>
@@ -43,7 +43,7 @@
                     <constraint firstItem="r8g-b5-5kh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="6i2-JG-PVD"/>
                     <constraint firstAttribute="trailing" secondItem="7hs-3P-iqR" secondAttribute="trailing" constant="16" id="O4v-g4-BP9"/>
                     <constraint firstItem="XLN-pJ-4LJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="SDw-nR-rhJ"/>
-                    <constraint firstAttribute="bottom" secondItem="7hs-3P-iqR" secondAttribute="bottom" id="UIi-xX-a4p"/>
+                    <constraint firstItem="7hs-3P-iqR" firstAttribute="top" secondItem="XLN-pJ-4LJ" secondAttribute="bottom" id="kct-tI-YBI"/>
                     <constraint firstItem="7hs-3P-iqR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="s3N-ul-jcS"/>
                     <constraint firstAttribute="trailing" secondItem="XLN-pJ-4LJ" secondAttribute="trailing" constant="16" id="yVU-iB-pfd"/>
                 </constraints>
