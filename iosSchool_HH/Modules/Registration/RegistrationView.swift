@@ -8,8 +8,14 @@
 import UIKit
 
 protocol RegistrationView: UIView {
+    var delegate: RegistrationViewDelegate? { get set }
 
     func setView()
+}
+
+protocol RegistrationViewDelegate: AnyObject {
+    func doneButtonDidTap()
+    func backButtonDidTap()
 }
 
 class RegistrationViewImp: UIView, RegistrationView {
@@ -22,6 +28,8 @@ class RegistrationViewImp: UIView, RegistrationView {
     @IBOutlet private var passwordAgainTextField: UITextField!
     @IBOutlet private var doneButton: UIButton!
     @IBOutlet private var backButton: UIButton!
+
+    weak var delegate: RegistrationViewDelegate?
 
     func setView() {
         imageView.contentMode = .scaleAspectFill
