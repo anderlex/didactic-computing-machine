@@ -8,22 +8,22 @@
 import Foundation
 
 protocol CharactersAssembly {
-    func charactersVC() -> CharactersViewController
+    func charactersVC(data: LocationsCellData) -> CharactersViewController
     func charactersDataProvider() -> CharactersDataProvider
-    func charactersCoordinator() -> CharactersCoordinator
+    func charactersCoordinator(data: LocationsCellData) -> CharactersCoordinator
 }
 
 extension Assembly: CharactersAssembly {
 
-    func charactersVC() -> CharactersViewController {
-        .init(dataProvider: charactersDataProvider())
+    func charactersVC(data: LocationsCellData) -> CharactersViewController {
+        .init(dataProvider: charactersDataProvider(), data: data, imageService: imageService)
     }
 
     func charactersDataProvider() -> CharactersDataProvider {
         CharactersDataProviderImp(apiClient: apiClient)
     }
 
-    func charactersCoordinator() -> CharactersCoordinator {
-        CharactersCoordinator(assembly: self, context: .init())
+    func charactersCoordinator(data: LocationsCellData) -> CharactersCoordinator {
+        CharactersCoordinator(assembly: self, context: .init(data: data))
     }
 }

@@ -35,6 +35,7 @@
 		3F6CEDB22B14D1F800B599CA /* LocationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEDB02B14D1F800B599CA /* LocationsCell.xib */; };
 		3F6CEDB42B14D4E200B599CA /* LocationsCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDB32B14D4E200B599CA /* LocationsCellData.swift */; };
 		3F6CEDB72B14D7CF00B599CA /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDB62B14D7CF00B599CA /* NSObject+ClassName.swift */; };
+		3F6CEDBA2B18CC6600B599CA /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDB92B18CC6600B599CA /* ImageService.swift */; };
 		3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */; };
 		3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C742AEFC59B00892419 /* Assembly.swift */; };
 		3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C762AF9184F00892419 /* BaseCoordinator.swift */; };
@@ -99,6 +100,7 @@
 		3F6CEDB02B14D1F800B599CA /* LocationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsCell.xib; sourceTree = "<group>"; };
 		3F6CEDB32B14D4E200B599CA /* LocationsCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCellData.swift; sourceTree = "<group>"; };
 		3F6CEDB62B14D7CF00B599CA /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		3F6CEDB92B18CC6600B599CA /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 		3FB73C742AEFC59B00892419 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = ../Assembly.swift; sourceTree = "<group>"; };
 		3FB73C762AF9184F00892419 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
@@ -227,6 +229,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		3F6CEDB82B18CC5200B599CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3F6CEDB92B18CC6600B599CA /* ImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		3FB73C7A2AF9222B00892419 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +342,7 @@
 		3FD1F2A82AE119EE00C8563F /* iosSchool_HH */ = {
 			isa = PBXGroup;
 			children = (
+				3F6CEDB82B18CC5200B599CA /* Services */,
 				3F6CEDB52B14D79100B599CA /* Extensions */,
 				3F332D6E2B0F889700F8DBD4 /* UIKit */,
 				3FB73CCA2B06406A00892419 /* Common */,
@@ -512,6 +523,7 @@
 				3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */,
 				3F33A96E2B1235B3006ECF68 /* CharactersViewController.swift in Sources */,
 				3FB73C852AF9249200892419 /* AuthAssembly.swift in Sources */,
+				3F6CEDBA2B18CC6600B599CA /* ImageService.swift in Sources */,
 				3FB73CA62B0259CF00892419 /* LocationsList.swift in Sources */,
 				3F33A96C2B1235B3006ECF68 /* CharactersAssembly.swift in Sources */,
 				3F33A9602B1235A8006ECF68 /* LocationsAssembly.swift in Sources */,

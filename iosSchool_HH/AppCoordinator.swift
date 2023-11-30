@@ -42,7 +42,6 @@ class AppCoordinator: BaseCoordinator<CoordinatorContext> {
         let navVC = assembly.rootNavigationController()
         navVC.setViewControllers([locationsVC], animated: false)
         navVC.tabBarItem = RootTab.locations.tabBarItem
-
         // cabinetVC.tabBarItem = RootTab.cabinet.tabBarItem
         tabVC.setViewControllers([navVC], animated: false)
         setRoot(viewController: tabVC)

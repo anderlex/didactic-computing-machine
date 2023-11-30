@@ -11,7 +11,7 @@ class ApiClient {
 
     func performRequest<ResponseModel: Decodable> (
         url: String,
-        data: Data?, // ["username": username, "password": password"]
+        data: Data?, // ["username": username, "password": password]
         method: NetworkConstants.HTTPMethod,
         onRequestCompleted: @escaping (Result<ResponseModel, ApiError>) -> Void
     ) {
@@ -33,6 +33,23 @@ class ApiClient {
                     onRequestCompleted(.success(decodedValue))
             } else {
                 onRequestCompleted(.failure(.common(data)))
+            }
+        }
+        task.resume()
+    }
+
+    func requestImageData(url: String, completion: ((Data?) -> Void)?) {
+        guard let url = URL(string: url) else {
+            completion?(nil)
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+            if error != nil {
+                completion?(nil)
+            } else {
+                completion?(data)
             }
         }
         task.resume()
