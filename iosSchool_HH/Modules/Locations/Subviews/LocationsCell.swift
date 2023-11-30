@@ -18,7 +18,11 @@ class LocationsCell: UITableViewCell {
         }
     }
 
+    @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var populationLabel: UILabel!
+    @IBOutlet private var bottomBound: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,5 +33,7 @@ class LocationsCell: UITableViewCell {
 
     private func update(data: LocationsCellData) {
         nameLabel.text = data.name
+        descriptionLabel.text = data.type
+        populationLabel.text = "Население: \(data.population)"
     }
 }

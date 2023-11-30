@@ -39,11 +39,11 @@ class LocationsViewController<View: LocationsView>: BaseViewController<View> {
             .foregroundColor: UIColor(named: "DarkBlue") ?? .black,
             .font: UIFont.systemFont(ofSize: 18)
         ]
-/*        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .refresh,
-            target: self,
-            action: #selector(reload)
-        ) */
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(
+//            barButtonSystemItem: .refresh,
+//            target: self,
+//            action: #selector(reload)
+//        )
     }
 
     private func getListOfLocations() {
