@@ -62,6 +62,7 @@ class RegistrationViewImp: UIView, RegistrationView {
         backButton.layer.cornerRadius = 10
 
         doneButton.addTarget(self, action: #selector(doneButtonDidTap), for: .touchUpInside)
+        backButton.addTarget(self, action: #selector(backButtonDidTap), for: .touchUpInside)
 
         NotificationCenter.default.addObserver(
             self,
@@ -115,7 +116,7 @@ class RegistrationViewImp: UIView, RegistrationView {
         passwordAgainTextField.resignFirstResponder()
     }
 
-    @objc
+    @IBAction
     private func backButtonDidTap() {}
 
     @objc
