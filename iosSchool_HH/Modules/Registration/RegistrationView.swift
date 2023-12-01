@@ -14,7 +14,7 @@ protocol RegistrationView: UIView {
 }
 
 protocol RegistrationViewDelegate: AnyObject {
-    func doneButtonDidTap()
+    func doneButtonDidTap(login: String, password: String, passwordAgain: String)
     func backButtonDidTap()
 }
 
@@ -61,8 +61,8 @@ class RegistrationViewImp: UIView, RegistrationView {
         setShadowsButton(button: backButton)
         backButton.layer.cornerRadius = 10
 
-        doneButton.addTarget(self, action: #selector(doneButtonDidTap), for: .touchUpInside)
-        backButton.addTarget(self, action: #selector(backButtonDidTap), for: .touchUpInside)
+        doneButton.addTarget(self, action: #selector(doneDidTap), for: .touchUpInside)
+        backButton.addTarget(self, action: #selector(backDidTap), for: .touchUpInside)
 
         NotificationCenter.default.addObserver(
             self,
@@ -110,14 +110,26 @@ class RegistrationViewImp: UIView, RegistrationView {
     }
 
     @IBAction
-    private func doneButtonDidTap() {
+    private func doneDidTap(sender: UIButton) {
         loginTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
         passwordAgainTextField.resignFirstResponder()
+
+        delegate?.doneButtonDidTap(
+            login: loginTextField.text ?? "",
+            password: passwordTextField.text ?? "",
+            passwordAgain: passwordAgainTextField.text ?? ""
+        )
     }
 
-    @IBAction
-    private func backButtonDidTap() {}
+    @objc
+    private func backDidTap() {
+        loginTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        passwordAgainTextField.resignFirstResponder()
+
+        delegate?.backButtonDidTap()
+    }
 
     @objc
     private func keyboardWillShow(notification: Notification) {

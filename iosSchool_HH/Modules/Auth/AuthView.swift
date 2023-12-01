@@ -121,6 +121,9 @@ class AuthViewImp: UIView, AuthView {
 
     @objc
     private func registrationDidTap() {
+        loginTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+
         delegate?.registrationButtonDidTap()
     }
 

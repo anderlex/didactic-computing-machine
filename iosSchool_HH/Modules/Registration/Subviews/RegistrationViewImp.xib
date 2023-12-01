@@ -80,7 +80,7 @@
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <connections>
-                                                <action selector="doneButtonDidTap" destination="iN0-l3-epB" eventType="touchUpInside" id="0Iw-uR-9jY"/>
+                                                <action selector="doneDidTapWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="qmH-lw-vhe"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhn-8H-qFu">
@@ -93,9 +93,6 @@
                                             <state key="normal" title="Назад">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
-                                            <connections>
-                                                <action selector="backButtonDidTap" destination="iN0-l3-epB" eventType="touchUpInside" id="A9g-tq-zxu"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
