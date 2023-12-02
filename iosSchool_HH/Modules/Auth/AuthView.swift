@@ -93,7 +93,6 @@ class AuthViewImp: UIView, AuthView {
         textField.layer.shadowRadius = 5
         textField.layer.shadowOffset = CGSize(width: 0, height: 8)
         textField.borderStyle = .none
-        textField.layer.backgroundColor = UIColor(.white).cgColor
     }
 
     private func setLeftAlignment(textField: UITextField) {
