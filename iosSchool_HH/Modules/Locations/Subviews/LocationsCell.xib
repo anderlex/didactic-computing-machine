@@ -40,7 +40,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hs-3P-iqR">
-                        <rect key="frame" x="16" y="80" width="288" height="1"/>
+                        <rect key="frame" x="16" y="92" width="288" height="1"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="JlI-Gz-vV3"/>
@@ -56,7 +56,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="DCS-UU-2Zg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="4rt-Eo-g86"/>
-                    <constraint firstItem="7hs-3P-iqR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="80" id="HWJ-Vu-wm0"/>
+                    <constraint firstAttribute="bottom" secondItem="7hs-3P-iqR" secondAttribute="bottom" id="DIv-RX-LDs"/>
                     <constraint firstItem="uvV-4S-QB2" firstAttribute="centerY" secondItem="DCS-UU-2Zg" secondAttribute="centerY" id="TQs-nD-AiP"/>
                     <constraint firstItem="uvV-4S-QB2" firstAttribute="leading" secondItem="DCS-UU-2Zg" secondAttribute="trailing" id="XC0-Sn-zTg"/>
                     <constraint firstAttribute="bottom" secondItem="DCS-UU-2Zg" secondAttribute="bottom" id="Y4u-9b-elp"/>
