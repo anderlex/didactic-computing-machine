@@ -74,13 +74,14 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="A7U-dj-JfU"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="tintColor" red="0.3294117647" green="0.50588235290000005" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Готово">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <connections>
-                                                <action selector="doneButtonDidTap" destination="iN0-l3-epB" eventType="touchUpInside" id="0Iw-uR-9jY"/>
+                                                <action selector="doneDidTapWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="qmH-lw-vhe"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhn-8H-qFu">
@@ -88,6 +89,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="w9y-VE-W9U"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="tintColor" red="0.3294117647" green="0.50588235290000005" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Назад">

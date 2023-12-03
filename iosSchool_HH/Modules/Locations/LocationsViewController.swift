@@ -36,14 +36,15 @@ class LocationsViewController<View: LocationsView>: BaseViewController<View> {
     private func setupBar() {
         title = "Выбор планеты"
         navigationController?.navigationBar.titleTextAttributes = [
-            .foregroundColor: UIColor(named: "DarkBlue") ?? .black,
+            .foregroundColor: UIColor.black,
             .font: UIFont.systemFont(ofSize: 18)
         ]
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(
-//            barButtonSystemItem: .refresh,
-//            target: self,
-//            action: #selector(reload)
-//        )
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .refresh,
+            target: self,
+            action: #selector(reload)
+        )
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
 
     private func getListOfLocations() {
@@ -54,5 +55,10 @@ class LocationsViewController<View: LocationsView>: BaseViewController<View> {
             }
             self?.rootView.update(data: LocationsViewData(list: locationList))
         }
+    }
+
+    @objc
+    private func reload() {
+        getListOfLocations()
     }
 }
