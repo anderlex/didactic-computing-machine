@@ -12,10 +12,12 @@ import PKHUD
 class RegistrationViewController<View: RegistrationView>: BaseViewController<View> {
 
     private let dataProvider: RegistrationDataProvider
+    private let storageManager: StorageManager
     var onRegistrationSuccess: (() -> Void)?
 
-    init(dataProvider: RegistrationDataProvider, onRegistrationSuccess: (() -> Void)?) {
+    init(dataProvider: RegistrationDataProvider, storageManager: StorageManager, onRegistrationSuccess: (() -> Void)?) {
         self.dataProvider = dataProvider
+        self.storageManager = storageManager
         self.onRegistrationSuccess = onRegistrationSuccess
 
         super.init(nibName: nil, bundle: nil)
@@ -38,7 +40,6 @@ class RegistrationViewController<View: RegistrationView>: BaseViewController<Vie
 extension RegistrationViewController: RegistrationViewDelegate {
 
     func doneButtonDidTap(login: String, password: String, passwordAgain: String) {
-        self.onRegistrationSuccess?()
         guard password == passwordAgain else {
             DispatchQueue.main.async {
                 SPIndicator.present(title: "Неправильно повторили пароль", haptic: .error)
@@ -51,12 +52,13 @@ extension RegistrationViewController: RegistrationViewDelegate {
             DispatchQueue.main.async {
                 HUD.hide()
             }
-            guard let self, token != nil else {
+            guard let self, let token else {
                 DispatchQueue.main.async {
                     SPIndicator.present(title: error?.rawValue ?? "", haptic: .error)
                 }
                 return
             }
+            self.storageManager.saveToken(token: token)
             self.onRegistrationSuccess?()
         }
     }

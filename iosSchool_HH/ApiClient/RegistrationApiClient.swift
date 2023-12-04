@@ -19,7 +19,8 @@ extension ApiClient: RegistrationApiClient {
         userdata: UserData,
         onRequestCompleted: @escaping (TokenResponse?, ApiError?) -> Void
     ) {
-        let url = NetworkConstants.URLStrings.nanoPost + "/auth/register?username=\(userdata.username)&password=\(userdata.password)"
+        let url = NetworkConstants.URLStrings.nanoPost +
+            "/auth/register?username=\(userdata.username)&password=\(userdata.password)"
         let data = try? JSONEncoder().encode(userdata)
         performRequest(url: url, data: data, method: .post) { (result: Result<TokenResponse, ApiError>) in
             switch result {

@@ -36,6 +36,8 @@
 		3F6CEDB42B14D4E200B599CA /* LocationsCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDB32B14D4E200B599CA /* LocationsCellData.swift */; };
 		3F6CEDB72B14D7CF00B599CA /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDB62B14D7CF00B599CA /* NSObject+ClassName.swift */; };
 		3F6CEDBA2B18CC6600B599CA /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDB92B18CC6600B599CA /* ImageService.swift */; };
+		3F6CEDBD2B1E016E00B599CA /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6CEDBC2B1E016E00B599CA /* KeychainAccess */; };
+		3F6CEDBF2B1E018B00B599CA /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDBE2B1E018B00B599CA /* StorageManager.swift */; };
 		3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */; };
 		3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C742AEFC59B00892419 /* Assembly.swift */; };
 		3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C762AF9184F00892419 /* BaseCoordinator.swift */; };
@@ -101,6 +103,7 @@
 		3F6CEDB32B14D4E200B599CA /* LocationsCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCellData.swift; sourceTree = "<group>"; };
 		3F6CEDB62B14D7CF00B599CA /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		3F6CEDB92B18CC6600B599CA /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		3F6CEDBE2B1E018B00B599CA /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 		3FB73C742AEFC59B00892419 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = ../Assembly.swift; sourceTree = "<group>"; };
 		3FB73C762AF9184F00892419 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 			files = (
 				3F332D752B0F924600F8DBD4 /* SPIndicator in Frameworks */,
 				3F332D782B0F950800F8DBD4 /* PKHUD in Frameworks */,
+				3F6CEDBD2B1E016E00B599CA /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				3F6CEDB92B18CC6600B599CA /* ImageService.swift */,
+				3F6CEDBE2B1E018B00B599CA /* StorageManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 			packageProductDependencies = (
 				3F332D742B0F924600F8DBD4 /* SPIndicator */,
 				3F332D772B0F950800F8DBD4 /* PKHUD */,
+				3F6CEDBC2B1E016E00B599CA /* KeychainAccess */,
 			);
 			productName = iosSchool_HH;
 			productReference = 3FD1F2A62AE119EE00C8563F /* iosSchool_HH.app */;
@@ -429,6 +435,7 @@
 			packageReferences = (
 				3F332D732B0F924600F8DBD4 /* XCRemoteSwiftPackageReference "SPIndicator" */,
 				3F332D762B0F950800F8DBD4 /* XCRemoteSwiftPackageReference "PKHUD" */,
+				3F6CEDBB2B1E016D00B599CA /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 3FD1F2A72AE119EE00C8563F /* Products */;
 			projectDirPath = "";
@@ -491,6 +498,7 @@
 				3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */,
 				3F332D702B0F88A600F8DBD4 /* RootTab.swift in Sources */,
 				3F6CEDB42B14D4E200B599CA /* LocationsCellData.swift in Sources */,
+				3F6CEDBF2B1E018B00B599CA /* StorageManager.swift in Sources */,
 				3F33A9632B1235A8006ECF68 /* LocationsViewController.swift in Sources */,
 				3F33A9612B1235A8006ECF68 /* LocationsCoordinator.swift in Sources */,
 				3F33A9792B1235BC006ECF68 /* RegistrationView.swift in Sources */,
@@ -770,6 +778,14 @@
 				minimumVersion = 5.4.0;
 			};
 		};
+		3F6CEDBB2B1E016D00B599CA /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -782,6 +798,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F332D762B0F950800F8DBD4 /* XCRemoteSwiftPackageReference "PKHUD" */;
 			productName = PKHUD;
+		};
+		3F6CEDBC2B1E016E00B599CA /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F6CEDBB2B1E016D00B599CA /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
