@@ -26,12 +26,13 @@ class ImageServiceImp: ImageService {
             completion(image)
             return
         }
-        if self.imageDict.count > 50 {
-            self.imageDict.removeAll()
+        if imageDict.count > 50 {
+            imageDict.removeAll()
         }
         DispatchQueue.global().async {
             self.apiClient.requestImageData(url: url) { [weak self] data in
                 guard let data else {
+                    completion(nil)
                     return
                 }
                 self?.updateQueue.async {
