@@ -13,6 +13,7 @@ protocol StorageManager {
     func saveToken(token: TokenResponse)
     func getToken() -> TokenResponse?
     func removeToken()
+    func lastLoginTime()
 }
 
 class StorageManagerImp: StorageManager {
@@ -34,11 +35,12 @@ class StorageManagerImp: StorageManager {
     func saveToken(token: TokenResponse) {
         do {
             try keychain.set(token.token, key: StorageManagerKey.token.rawValue)
+            lastLoginTime()
         } catch {
             print(error as Any)
         }
     }
-    
+
     func getToken() -> TokenResponse? {
         do {
             guard let token = try keychain.get(StorageManagerKey.token.rawValue) else {
@@ -50,13 +52,21 @@ class StorageManagerImp: StorageManager {
         }
         return nil
     }
-    
+
     func removeToken() {
         do {
             try keychain.remove(StorageManagerKey.token.rawValue)
         } catch {
             print(error as Any)
         }
+    }
+
+    func lastLoginTime() {
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd MM yyyy"
+        UserDefaults.standard.set(dateFormatter.string(from: date), forKey: "lastTimeLogin")
+        print(dateFormatter.string(from: date))
     }
 }
 
