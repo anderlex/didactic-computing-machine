@@ -5,6 +5,8 @@
 //  Created by student on 16.11.2023.
 //
 
-import UIKit
+import Foundation
 
-struct CharactersViewData {}
+struct CharactersViewData {
+    let cells: [CharactersCellData]
+}

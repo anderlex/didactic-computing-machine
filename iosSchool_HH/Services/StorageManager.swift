@@ -38,7 +38,7 @@ class StorageManagerImp: StorageManager {
             print(error as Any)
         }
     }
-    
+
     func getToken() -> TokenResponse? {
         do {
             guard let token = try keychain.get(StorageManagerKey.token.rawValue) else {
@@ -50,7 +50,7 @@ class StorageManagerImp: StorageManager {
         }
         return nil
     }
-    
+
     func removeToken() {
         do {
             try keychain.remove(StorageManagerKey.token.rawValue)
