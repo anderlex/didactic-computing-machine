@@ -62,14 +62,12 @@ class StorageManagerImp: StorageManager {
     }
 
     func lastLoginTime() {
-        let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MM yyyy"
         UserDefaults.standard.set(
-            dateFormatter.string(from: date),
+            dateFormatter.string(from: Date()),
             forKey: StorageManagerKey.lastTimeLogin.rawValue
         )
-//        print(UserDefaults.standard.string(forKey: StorageManagerKey.lastTimeLogin.rawValue) ?? "None")
     }
 }
 
