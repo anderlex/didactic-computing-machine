@@ -31,6 +31,7 @@ class CharactersViewController<View: CharactersView>: BaseViewController<View> {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        rootView.backgroundColor = UIColor(red: 0.769, green: 0.769, blue: 0.769, alpha: 1)
         rootView.setView()
         rootView.update(data: CharactersViewData(cells: charactersUrlList.map({ CharactersCellData(url: $0) })))
 
@@ -48,7 +49,14 @@ class CharactersViewController<View: CharactersView>: BaseViewController<View> {
                     ))
                 }
                 self.imageService.getImage(url: character.image, completion: { [weak self] image in
-                    print(image?.size ?? 0)
+                    DispatchQueue.main.async {
+                        self?.rootView.updateCharacter(index: index, with: CharactersCellData(
+                            character: character,
+                            isLoading: true,
+                            image: image,
+                            selectClosure: nil
+                        ))
+                    }
                 })
             }
         }

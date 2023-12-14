@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,32 +17,56 @@
                 <rect key="frame" x="0.0" y="0.0" width="251" height="244"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-Eo-UDf">
-                        <rect key="frame" x="16" y="16" width="219" height="212"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lyr-h5-4mr">
+                        <rect key="frame" x="3" y="202.33333333333334" width="245" height="38.666666666666657"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-Eo-UDf">
+                                <rect key="frame" x="0.0" y="0.0" width="245" height="21.666666666666668"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AK-IF-Mhh">
+                                <rect key="frame" x="0.0" y="21.666666666666657" width="245" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="faE-6i-WyC">
+                        <rect key="frame" x="60.666666666666657" y="0.0" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="LGw-dp-nf5"/>
+                            <constraint firstAttribute="width" constant="130" id="uzy-Zs-4dG"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+            <color key="backgroundColor" name="iceberg"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="RCc-Eo-UDf" secondAttribute="trailing" constant="16" id="1by-Pf-k4Y"/>
-                <constraint firstItem="RCc-Eo-UDf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="NwR-FD-QJB"/>
-                <constraint firstAttribute="bottom" secondItem="RCc-Eo-UDf" secondAttribute="bottom" constant="16" id="W3I-ii-qeJ"/>
-                <constraint firstItem="RCc-Eo-UDf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="gxi-HR-7qD"/>
+                <constraint firstAttribute="trailing" secondItem="Lyr-h5-4mr" secondAttribute="trailing" constant="3" id="6sy-DP-89C"/>
+                <constraint firstItem="Lyr-h5-4mr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="faE-6i-WyC" secondAttribute="bottom" id="CJB-oD-7Us"/>
+                <constraint firstAttribute="bottom" secondItem="Lyr-h5-4mr" secondAttribute="bottom" constant="3" id="JVP-Iz-k8Q"/>
+                <constraint firstItem="faE-6i-WyC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OoS-nj-UoQ"/>
+                <constraint firstItem="faE-6i-WyC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gip-gZ-vin"/>
+                <constraint firstItem="Lyr-h5-4mr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ocU-CG-bPX"/>
+                <constraint firstItem="Lyr-h5-4mr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="xdk-Dg-jzY"/>
             </constraints>
             <size key="customSize" width="251" height="244"/>
             <connections>
+                <outlet property="characterImage" destination="faE-6i-WyC" id="P8E-ar-1XF"/>
+                <outlet property="descritionLabel" destination="9AK-IF-Mhh" id="e8l-hW-mKs"/>
                 <outlet property="nameLabel" destination="RCc-Eo-UDf" id="8HJ-Au-aho"/>
+                <outlet property="stackView" destination="Lyr-h5-4mr" id="it3-qg-S14"/>
             </connections>
             <point key="canvasLocation" x="140" y="30"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="iceberg">
+            <color red="0.76899999380111694" green="0.84700000286102295" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

@@ -9,7 +9,10 @@ import UIKit
 
 class CharactersCell: UICollectionViewCell, CoreCellView {
 
+    @IBOutlet private weak var stackView: UIStackView!
+    @IBOutlet private weak var descritionLabel: UILabel!
     @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var characterImage: UIImageView!
 
     static func layoutSection() -> NSCollectionLayoutSection? {
         let itemSize = NSCollectionLayoutSize(
@@ -36,5 +39,7 @@ class CharactersCell: UICollectionViewCell, CoreCellView {
 
     func update(with inputData: CharactersCellData) {
         nameLabel.text = inputData.name
+        descritionLabel.text = inputData.description
+        characterImage.image = inputData.image
     }
 }
