@@ -24,11 +24,6 @@ class LocationsCell: UITableViewCell {
     @IBOutlet private weak var populationLabel: UILabel!
     @IBOutlet private var bottomBound: UIView!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
     // MARK: - Private methods
 
     private func update(data: LocationsCellData) {
