@@ -13,6 +13,12 @@ class BaseNavigationController: UINavigationController, UINavigationControllerDe
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.configureWithTransparentBackground()
+        UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+        UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+
         navigationBar.prefersLargeTitles = false
         navigationBar.isTranslucent = false
         navigationBar.backgroundColor = UIColor(named: "iceberg")

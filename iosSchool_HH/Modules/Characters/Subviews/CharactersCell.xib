@@ -41,23 +41,29 @@
                             <constraint firstAttribute="width" constant="130" id="uzy-Zs-4dG"/>
                         </constraints>
                     </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="W1H-fI-lP3">
+                        <rect key="frame" x="115.66666666666667" y="55" width="20.000000000000014" height="20"/>
+                    </activityIndicatorView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" name="iceberg"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Lyr-h5-4mr" secondAttribute="trailing" constant="3" id="6sy-DP-89C"/>
+                <constraint firstItem="W1H-fI-lP3" firstAttribute="centerX" secondItem="faE-6i-WyC" secondAttribute="centerX" id="BAJ-Or-a5V"/>
                 <constraint firstItem="Lyr-h5-4mr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="faE-6i-WyC" secondAttribute="bottom" id="CJB-oD-7Us"/>
                 <constraint firstAttribute="bottom" secondItem="Lyr-h5-4mr" secondAttribute="bottom" constant="3" id="JVP-Iz-k8Q"/>
                 <constraint firstItem="faE-6i-WyC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OoS-nj-UoQ"/>
                 <constraint firstItem="faE-6i-WyC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gip-gZ-vin"/>
                 <constraint firstItem="Lyr-h5-4mr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ocU-CG-bPX"/>
+                <constraint firstItem="W1H-fI-lP3" firstAttribute="centerY" secondItem="faE-6i-WyC" secondAttribute="centerY" id="uuP-qy-lYz"/>
                 <constraint firstItem="Lyr-h5-4mr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="xdk-Dg-jzY"/>
             </constraints>
             <size key="customSize" width="251" height="244"/>
             <connections>
                 <outlet property="characterImage" destination="faE-6i-WyC" id="P8E-ar-1XF"/>
                 <outlet property="descritionLabel" destination="9AK-IF-Mhh" id="e8l-hW-mKs"/>
+                <outlet property="loadingImageIndicator" destination="W1H-fI-lP3" id="laJ-Ev-HWS"/>
                 <outlet property="nameLabel" destination="RCc-Eo-UDf" id="8HJ-Au-aho"/>
                 <outlet property="stackView" destination="Lyr-h5-4mr" id="it3-qg-S14"/>
             </connections>

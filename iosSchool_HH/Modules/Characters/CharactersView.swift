@@ -34,6 +34,10 @@ class CharactersViewImp: UIView, CharactersView {
         collectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        collectionView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        collectionView.layer.shadowOpacity = 1
+        collectionView.layer.shadowRadius = 8
+        collectionView.layer.shadowOffset = CGSize(width: 0, height: 5)
     }
 
     func update(data: CharactersViewData) {
@@ -83,10 +87,12 @@ extension CharactersViewImp: UICollectionViewDataSource {
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
-        section?.cell(
+        let customCell = section?.cell(
             collectionView: collectionView,
             indexPath: indexPath
         ) ?? UICollectionViewCell()
+        customCell.layer.cornerRadius = 15
+        return customCell
     }
 }
 
@@ -100,9 +106,5 @@ extension CharactersViewImp: UICollectionViewDelegate {
 }
 
 private extension CharactersViewImp {
-    typealias CharactersSection = Section<
-        CharactersCell,
-        EmptyReusableVIew,
-        EmptyReusableVIew
-    >
+    typealias CharactersSection = Section<CharactersCell,EmptyReusableVIew,EmptyReusableVIew>
 }

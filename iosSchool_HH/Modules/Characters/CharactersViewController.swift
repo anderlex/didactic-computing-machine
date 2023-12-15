@@ -50,14 +50,18 @@ class CharactersViewController<View: CharactersView>: BaseViewController<View> {
                 }
                 self.imageService.getImage(url: character.image, completion: { [weak self] image in
                     DispatchQueue.main.async {
+                        guard let image else {
+                            return
+                        }
                         self?.rootView.updateCharacter(index: index, with: CharactersCellData(
                             character: character,
-                            isLoading: true,
+                            isLoading: false,
                             image: image,
                             selectClosure: nil
-                        ))
+                            ))
+                        }
                     }
-                })
+                )
             }
         }
     }

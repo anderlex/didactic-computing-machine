@@ -13,6 +13,7 @@ class CharactersCell: UICollectionViewCell, CoreCellView {
     @IBOutlet private weak var descritionLabel: UILabel!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var characterImage: UIImageView!
+    @IBOutlet private weak var loadingImageIndicator: UIActivityIndicatorView!
 
     static func layoutSection() -> NSCollectionLayoutSection? {
         let itemSize = NSCollectionLayoutSize(
@@ -38,8 +39,15 @@ class CharactersCell: UICollectionViewCell, CoreCellView {
     }
 
     func update(with inputData: CharactersCellData) {
+        if inputData.isLoading {
+            loadingImageIndicator.startAnimating()
+            characterImage.image = UIImage(named: "placeholder-image")
+        } else {
+            loadingImageIndicator.stopAnimating()
+            loadingImageIndicator.isHidden = true
+            characterImage.image = inputData.image
+        }
         nameLabel.text = inputData.name
         descritionLabel.text = inputData.description
-        characterImage.image = inputData.image
     }
 }
