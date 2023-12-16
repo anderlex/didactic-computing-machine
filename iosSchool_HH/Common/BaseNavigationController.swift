@@ -22,6 +22,7 @@ class BaseNavigationController: UINavigationController, UINavigationControllerDe
         navigationBar.prefersLargeTitles = false
         navigationBar.isTranslucent = false
         navigationBar.backgroundColor = UIColor(named: "iceberg")
+        navigationBar.tintColor = UIColor.black
         view.backgroundColor = UIColor(named: "iceberg")
     }
 

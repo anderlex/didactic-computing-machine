@@ -9,7 +9,6 @@ import UIKit
 
 class CharactersCell: UICollectionViewCell, CoreCellView {
 
-    @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var descritionLabel: UILabel!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var characterImage: UIImageView!
@@ -34,7 +33,7 @@ class CharactersCell: UICollectionViewCell, CoreCellView {
         group.interItemSpacing = .fixed(24)
         let section = NSCollectionLayoutSection(group: group)
         section.interGroupSpacing = 30
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 59, leading: 16, bottom: 59, trailing: 16)
         return section
     }
 

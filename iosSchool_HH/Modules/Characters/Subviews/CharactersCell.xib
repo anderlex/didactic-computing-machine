@@ -17,8 +17,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="251" height="244"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lyr-h5-4mr">
-                        <rect key="frame" x="3" y="202.33333333333334" width="245" height="38.666666666666657"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="faE-6i-WyC">
+                        <rect key="frame" x="0.0" y="0.0" width="251" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="g5s-k3-gDF"/>
+                        </constraints>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="W1H-fI-lP3">
+                        <rect key="frame" x="115.66666666666667" y="52.666666666666664" width="20.000000000000014" height="19.999999999999993"/>
+                    </activityIndicatorView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JEG-Ec-nhx">
+                        <rect key="frame" x="3" y="205.33333333333334" width="245" height="38.666666666666657"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-Eo-UDf">
                                 <rect key="frame" x="0.0" y="0.0" width="245" height="21.666666666666668"/>
@@ -34,30 +43,20 @@
                             </label>
                         </subviews>
                     </stackView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="faE-6i-WyC">
-                        <rect key="frame" x="60.666666666666657" y="0.0" width="130" height="130"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="130" id="LGw-dp-nf5"/>
-                            <constraint firstAttribute="width" constant="130" id="uzy-Zs-4dG"/>
-                        </constraints>
-                    </imageView>
-                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="W1H-fI-lP3">
-                        <rect key="frame" x="115.66666666666667" y="55" width="20.000000000000014" height="20"/>
-                    </activityIndicatorView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" name="iceberg"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Lyr-h5-4mr" secondAttribute="trailing" constant="3" id="6sy-DP-89C"/>
+                <constraint firstAttribute="trailing" secondItem="faE-6i-WyC" secondAttribute="trailing" id="88e-WY-kxR"/>
                 <constraint firstItem="W1H-fI-lP3" firstAttribute="centerX" secondItem="faE-6i-WyC" secondAttribute="centerX" id="BAJ-Or-a5V"/>
-                <constraint firstItem="Lyr-h5-4mr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="faE-6i-WyC" secondAttribute="bottom" id="CJB-oD-7Us"/>
-                <constraint firstAttribute="bottom" secondItem="Lyr-h5-4mr" secondAttribute="bottom" constant="3" id="JVP-Iz-k8Q"/>
                 <constraint firstItem="faE-6i-WyC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OoS-nj-UoQ"/>
+                <constraint firstItem="JEG-Ec-nhx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="UfA-hs-HF4"/>
                 <constraint firstItem="faE-6i-WyC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gip-gZ-vin"/>
-                <constraint firstItem="Lyr-h5-4mr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ocU-CG-bPX"/>
+                <constraint firstAttribute="trailing" secondItem="JEG-Ec-nhx" secondAttribute="trailing" constant="3" id="hcz-xi-xr6"/>
+                <constraint firstAttribute="bottom" secondItem="JEG-Ec-nhx" secondAttribute="bottom" id="igx-uV-0vC"/>
                 <constraint firstItem="W1H-fI-lP3" firstAttribute="centerY" secondItem="faE-6i-WyC" secondAttribute="centerY" id="uuP-qy-lYz"/>
-                <constraint firstItem="Lyr-h5-4mr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="xdk-Dg-jzY"/>
+                <constraint firstItem="faE-6i-WyC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yEL-XF-dx5"/>
             </constraints>
             <size key="customSize" width="251" height="244"/>
             <connections>
@@ -65,7 +64,6 @@
                 <outlet property="descritionLabel" destination="9AK-IF-Mhh" id="e8l-hW-mKs"/>
                 <outlet property="loadingImageIndicator" destination="W1H-fI-lP3" id="laJ-Ev-HWS"/>
                 <outlet property="nameLabel" destination="RCc-Eo-UDf" id="8HJ-Au-aho"/>
-                <outlet property="stackView" destination="Lyr-h5-4mr" id="it3-qg-S14"/>
             </connections>
             <point key="canvasLocation" x="140" y="30"/>
         </collectionViewCell>

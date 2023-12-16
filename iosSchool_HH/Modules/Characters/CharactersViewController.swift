@@ -31,7 +31,7 @@ class CharactersViewController<View: CharactersView>: BaseViewController<View> {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        rootView.backgroundColor = UIColor(red: 0.769, green: 0.769, blue: 0.769, alpha: 1)
+        rootView.backgroundColor = UIColor(named: "character-background")
         rootView.setView()
         rootView.update(data: CharactersViewData(cells: charactersUrlList.map({ CharactersCellData(url: $0) })))
 

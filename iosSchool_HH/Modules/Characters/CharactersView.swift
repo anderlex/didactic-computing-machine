@@ -106,5 +106,5 @@ extension CharactersViewImp: UICollectionViewDelegate {
 }
 
 private extension CharactersViewImp {
-    typealias CharactersSection = Section<CharactersCell,EmptyReusableVIew,EmptyReusableVIew>
+    typealias CharactersSection = Section<CharactersCell, EmptyReusableVIew, EmptyReusableVIew>
 }
