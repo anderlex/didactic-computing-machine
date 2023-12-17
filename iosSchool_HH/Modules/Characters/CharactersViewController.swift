@@ -51,6 +51,12 @@ class CharactersViewController<View: CharactersView>: BaseViewController<View> {
                 self.imageService.getImage(url: character.image, completion: { [weak self] image in
                     DispatchQueue.main.async {
                         guard let image else {
+                            self?.rootView.updateCharacter(index: index, with: CharactersCellData(
+                                character: character,
+                                isLoading: false,
+                                image: UIImage(named: "placeholder-image"),
+                                selectClosure: nil
+                            ))
                             return
                         }
                         self?.rootView.updateCharacter(index: index, with: CharactersCellData(
@@ -58,10 +64,9 @@ class CharactersViewController<View: CharactersView>: BaseViewController<View> {
                             isLoading: false,
                             image: image,
                             selectClosure: nil
-                            ))
-                        }
+                        ))
                     }
-                )
+                })
             }
         }
     }
