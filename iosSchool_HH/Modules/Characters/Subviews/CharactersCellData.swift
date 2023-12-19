@@ -16,6 +16,7 @@ struct CharactersCellData: CoreCellInputData {
     let imageUrl: String?
     let image: UIImage?
     let description: String?
+    let episodes: [String]
 
     init(character: Character, isLoading: Bool, image: UIImage?, selectClosure: ((CoreCellInputData) -> Void)?) {
         url = character.url
@@ -24,6 +25,8 @@ struct CharactersCellData: CoreCellInputData {
         imageUrl = character.image
         self.image = image
         description = character.gender.rawValue + " " + character.species
+        self.selectClosure = selectClosure
+        episodes = character.episode
     }
 
     init(url: String) {
@@ -33,5 +36,7 @@ struct CharactersCellData: CoreCellInputData {
         imageUrl = nil
         image = nil
         description = nil
+        selectClosure = nil
+        episodes = []
     }
 }

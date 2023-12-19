@@ -49,6 +49,23 @@
 		3F6CEDD42B22043600B599CA /* CharactersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDD22B22043600B599CA /* CharactersCell.swift */; };
 		3F6CEDD52B22043600B599CA /* CharactersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEDD32B22043600B599CA /* CharactersCell.xib */; };
 		3F6CEDD72B2204CB00B599CA /* CharactersCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDD62B2204CB00B599CA /* CharactersCellData.swift */; };
+		3F6CEDEC2B2B236C00B599CA /* PersonApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDEB2B2B236C00B599CA /* PersonApiClient.swift */; };
+		3F6CEDFF2B2B2BA900B599CA /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDF92B2B2BA900B599CA /* PersonView.swift */; };
+		3F6CEE002B2B2BA900B599CA /* PersonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDFA2B2B2BA900B599CA /* PersonAssembly.swift */; };
+		3F6CEE012B2B2BA900B599CA /* PersonViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDFB2B2B2BA900B599CA /* PersonViewData.swift */; };
+		3F6CEE022B2B2BA900B599CA /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDFC2B2B2BA900B599CA /* PersonViewController.swift */; };
+		3F6CEE032B2B2BA900B599CA /* PersonDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDFD2B2B2BA900B599CA /* PersonDataProvider.swift */; };
+		3F6CEE042B2B2BA900B599CA /* PersonCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEDFE2B2B2BA900B599CA /* PersonCoordinator.swift */; };
+		3F6CEE082B2B308800B599CA /* PersonPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE062B2B308800B599CA /* PersonPhotoCell.swift */; };
+		3F6CEE092B2B308800B599CA /* PersonPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEE072B2B308800B599CA /* PersonPhotoCell.xib */; };
+		3F6CEE0B2B2B313A00B599CA /* PersonPhotoCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE0A2B2B313A00B599CA /* PersonPhotoCellData.swift */; };
+		3F6CEE0E2B2B3C0800B599CA /* PersonEpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE0C2B2B3C0800B599CA /* PersonEpisodeCell.swift */; };
+		3F6CEE0F2B2B3C0800B599CA /* PersonEpisodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEE0D2B2B3C0800B599CA /* PersonEpisodeCell.xib */; };
+		3F6CEE112B2B3CCA00B599CA /* PersonEpisodeCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE102B2B3CCA00B599CA /* PersonEpisodeCellData.swift */; };
+		3F6CEE132B2B428100B599CA /* NSCollectionLayoutSection+SupplementaryItem .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE122B2B428100B599CA /* NSCollectionLayoutSection+SupplementaryItem .swift */; };
+		3F6CEE162B2B42FD00B599CA /* PersonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE142B2B42FD00B599CA /* PersonHeaderView.swift */; };
+		3F6CEE172B2B42FD00B599CA /* PersonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEE152B2B42FD00B599CA /* PersonHeaderView.xib */; };
+		3F6CEE192B2B438900B599CA /* PersonHeaderViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE182B2B438900B599CA /* PersonHeaderViewData.swift */; };
 		3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */; };
 		3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C742AEFC59B00892419 /* Assembly.swift */; };
 		3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C762AF9184F00892419 /* BaseCoordinator.swift */; };
@@ -126,6 +143,23 @@
 		3F6CEDD22B22043600B599CA /* CharactersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCell.swift; sourceTree = "<group>"; };
 		3F6CEDD32B22043600B599CA /* CharactersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersCell.xib; sourceTree = "<group>"; };
 		3F6CEDD62B2204CB00B599CA /* CharactersCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCellData.swift; sourceTree = "<group>"; };
+		3F6CEDEB2B2B236C00B599CA /* PersonApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApiClient.swift; sourceTree = "<group>"; };
+		3F6CEDF92B2B2BA900B599CA /* PersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonView.swift; path = ../../../../../Desktop/Person/PersonView.swift; sourceTree = "<group>"; };
+		3F6CEDFA2B2B2BA900B599CA /* PersonAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonAssembly.swift; path = ../../../../../Desktop/Person/PersonAssembly.swift; sourceTree = "<group>"; };
+		3F6CEDFB2B2B2BA900B599CA /* PersonViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonViewData.swift; path = ../../../../../Desktop/Person/PersonViewData.swift; sourceTree = "<group>"; };
+		3F6CEDFC2B2B2BA900B599CA /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonViewController.swift; path = ../../../../../Desktop/Person/PersonViewController.swift; sourceTree = "<group>"; };
+		3F6CEDFD2B2B2BA900B599CA /* PersonDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDataProvider.swift; path = ../../../../../Desktop/Person/PersonDataProvider.swift; sourceTree = "<group>"; };
+		3F6CEDFE2B2B2BA900B599CA /* PersonCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonCoordinator.swift; path = ../../../../../Desktop/Person/PersonCoordinator.swift; sourceTree = "<group>"; };
+		3F6CEE062B2B308800B599CA /* PersonPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPhotoCell.swift; sourceTree = "<group>"; };
+		3F6CEE072B2B308800B599CA /* PersonPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonPhotoCell.xib; sourceTree = "<group>"; };
+		3F6CEE0A2B2B313A00B599CA /* PersonPhotoCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPhotoCellData.swift; sourceTree = "<group>"; };
+		3F6CEE0C2B2B3C0800B599CA /* PersonEpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEpisodeCell.swift; sourceTree = "<group>"; };
+		3F6CEE0D2B2B3C0800B599CA /* PersonEpisodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonEpisodeCell.xib; sourceTree = "<group>"; };
+		3F6CEE102B2B3CCA00B599CA /* PersonEpisodeCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEpisodeCellData.swift; sourceTree = "<group>"; };
+		3F6CEE122B2B428100B599CA /* NSCollectionLayoutSection+SupplementaryItem .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+SupplementaryItem .swift"; sourceTree = "<group>"; };
+		3F6CEE142B2B42FD00B599CA /* PersonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderView.swift; sourceTree = "<group>"; };
+		3F6CEE152B2B42FD00B599CA /* PersonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonHeaderView.xib; sourceTree = "<group>"; };
+		3F6CEE182B2B438900B599CA /* PersonHeaderViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderViewData.swift; sourceTree = "<group>"; };
 		3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 		3FB73C742AEFC59B00892419 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = ../Assembly.swift; sourceTree = "<group>"; };
 		3FB73C762AF9184F00892419 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
@@ -254,6 +288,7 @@
 			children = (
 				3F6CEDB62B14D7CF00B599CA /* NSObject+ClassName.swift */,
 				3F6CEDCF2B21FD6D00B599CA /* UICollectionView+Registrate.swift */,
+				3F6CEE122B2B428100B599CA /* NSCollectionLayoutSection+SupplementaryItem .swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,9 +326,40 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		3F6CEDF82B2B2B8D00B599CA /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				3F6CEE052B2B304E00B599CA /* Subviews */,
+				3F6CEDFA2B2B2BA900B599CA /* PersonAssembly.swift */,
+				3F6CEDFE2B2B2BA900B599CA /* PersonCoordinator.swift */,
+				3F6CEDFD2B2B2BA900B599CA /* PersonDataProvider.swift */,
+				3F6CEDF92B2B2BA900B599CA /* PersonView.swift */,
+				3F6CEDFC2B2B2BA900B599CA /* PersonViewController.swift */,
+				3F6CEDFB2B2B2BA900B599CA /* PersonViewData.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		3F6CEE052B2B304E00B599CA /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				3F6CEE062B2B308800B599CA /* PersonPhotoCell.swift */,
+				3F6CEE072B2B308800B599CA /* PersonPhotoCell.xib */,
+				3F6CEE0A2B2B313A00B599CA /* PersonPhotoCellData.swift */,
+				3F6CEE0C2B2B3C0800B599CA /* PersonEpisodeCell.swift */,
+				3F6CEE0D2B2B3C0800B599CA /* PersonEpisodeCell.xib */,
+				3F6CEE102B2B3CCA00B599CA /* PersonEpisodeCellData.swift */,
+				3F6CEE142B2B42FD00B599CA /* PersonHeaderView.swift */,
+				3F6CEE152B2B42FD00B599CA /* PersonHeaderView.xib */,
+				3F6CEE182B2B438900B599CA /* PersonHeaderViewData.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		3FB73C7A2AF9222B00892419 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3F6CEDF82B2B2B8D00B599CA /* Person */,
 				3F33A9582B12355A006ECF68 /* Locations */,
 				3F33A9572B12354F006ECF68 /* Characters */,
 				3F33A9562B123548006ECF68 /* Registration */,
@@ -353,6 +419,7 @@
 				3FB73CAC2B025B5F00892419 /* NetworkConstants.swift */,
 				3FB73CAE2B025CB500892419 /* ApiError.swift */,
 				3FB73CB02B02601100892419 /* AuthApiClient.swift */,
+				3F6CEDEB2B2B236C00B599CA /* PersonApiClient.swift */,
 			);
 			path = ApiClient;
 			sourceTree = "<group>";
@@ -500,11 +567,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6CEE172B2B42FD00B599CA /* PersonHeaderView.xib in Resources */,
 				3F6CEDD52B22043600B599CA /* CharactersCell.xib in Resources */,
 				3FF66CD92B13841300963BF7 /* RegistrationViewImp.xib in Resources */,
 				3FD1F2B62AE119F200C8563F /* LaunchScreen.storyboard in Resources */,
 				3FD1F2B32AE119F200C8563F /* Assets.xcassets in Resources */,
 				3F33A97E2B12473A006ECF68 /* SplashViewImp.xib in Resources */,
+				3F6CEE0F2B2B3C0800B599CA /* PersonEpisodeCell.xib in Resources */,
+				3F6CEE092B2B308800B599CA /* PersonPhotoCell.xib in Resources */,
 				3F6CEDB22B14D1F800B599CA /* LocationsCell.xib in Resources */,
 				3FB73CCF2B0642E700892419 /* AuthViewImp.xib in Resources */,
 			);
@@ -539,6 +609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6CEDEC2B2B236C00B599CA /* PersonApiClient.swift in Sources */,
 				3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */,
 				3FB73C8E2AFD131C00892419 /* SplashView.swift in Sources */,
 				3FB73CB12B02601100892419 /* AuthApiClient.swift in Sources */,
@@ -548,6 +619,8 @@
 				3FB73C902AFD137E00892419 /* SplashViewController.swift in Sources */,
 				3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */,
 				3F332D702B0F88A600F8DBD4 /* RootTab.swift in Sources */,
+				3F6CEE192B2B438900B599CA /* PersonHeaderViewData.swift in Sources */,
+				3F6CEE112B2B3CCA00B599CA /* PersonEpisodeCellData.swift in Sources */,
 				3F6CEDB42B14D4E200B599CA /* LocationsCellData.swift in Sources */,
 				3F6CEDBF2B1E018B00B599CA /* StorageManager.swift in Sources */,
 				3F33A9632B1235A8006ECF68 /* LocationsViewController.swift in Sources */,
@@ -557,29 +630,38 @@
 				3FB73CCC2B06409600892419 /* BaseViewController.swift in Sources */,
 				3F6CEDCC2B21FB3B00B599CA /* CoreSection.swift in Sources */,
 				3F33A96D2B1235B3006ECF68 /* CharactersViewData.swift in Sources */,
+				3F6CEE082B2B308800B599CA /* PersonPhotoCell.swift in Sources */,
 				3FB73C922AFD140E00892419 /* SplashCoordinator.swift in Sources */,
+				3F6CEE032B2B2BA900B599CA /* PersonDataProvider.swift in Sources */,
 				3FB73C7D2AF922D600892419 /* AuthViewController.swift in Sources */,
 				3FFE2A802B1224A800EEF8BF /* CharactersApiClient.swift in Sources */,
 				3F6CEDB72B14D7CF00B599CA /* NSObject+ClassName.swift in Sources */,
 				3FB73C872AF9261200892419 /* AuthCoordinator.swift in Sources */,
+				3F6CEE132B2B428100B599CA /* NSCollectionLayoutSection+SupplementaryItem .swift in Sources */,
 				3F33A9772B1235BC006ECF68 /* RegistrationCoordinator.swift in Sources */,
 				3FD1F2AA2AE119EE00C8563F /* AppDelegate.swift in Sources */,
 				3F33A96B2B1235B3006ECF68 /* CharactersCoordinator.swift in Sources */,
 				3FB73C792AF9193900892419 /* AppCoordinator.swift in Sources */,
 				3F332D722B0F894200F8DBD4 /* BaseNavigationController.swift in Sources */,
+				3F6CEE012B2B2BA900B599CA /* PersonViewData.swift in Sources */,
 				3F6CEDB12B14D1F800B599CA /* LocationsCell.swift in Sources */,
 				3FB73CAF2B025CB500892419 /* ApiError.swift in Sources */,
 				3FB73C812AF9242700892419 /* AuthViewData.swift in Sources */,
+				3F6CEE0E2B2B3C0800B599CA /* PersonEpisodeCell.swift in Sources */,
 				3FB73CA82B025A3D00892419 /* TokenResponse.swift in Sources */,
 				3F332D6D2B0F884500F8DBD4 /* TabBarController.swift in Sources */,
 				3FB73C7F2AF9230D00892419 /* AuthView.swift in Sources */,
 				3F6CEDCA2B21F6DE00B599CA /* EmptyReusableVIew.swift in Sources */,
+				3F6CEE002B2B2BA900B599CA /* PersonAssembly.swift in Sources */,
 				3FB73C832AF9245300892419 /* AuthDataProvider.swift in Sources */,
+				3F6CEE162B2B42FD00B599CA /* PersonHeaderView.swift in Sources */,
 				3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */,
 				3FFE2A862B12261F00EEF8BF /* UserData.swift in Sources */,
 				3FB73CA42B02514D00892419 /* Location.swift in Sources */,
 				3FFE2A7F2B1224A800EEF8BF /* LocationsApiClient.swift in Sources */,
+				3F6CEE022B2B2BA900B599CA /* PersonViewController.swift in Sources */,
 				3FFE2A882B12262B00EEF8BF /* Character.swift in Sources */,
+				3F6CEDFF2B2B2BA900B599CA /* PersonView.swift in Sources */,
 				3F33A9782B1235BC006ECF68 /* RegistrationAssembly.swift in Sources */,
 				3F33A96F2B1235B3006ECF68 /* CharactersDataProvider.swift in Sources */,
 				3FD1F2AC2AE119EE00C8563F /* SceneDelegate.swift in Sources */,
@@ -591,6 +673,7 @@
 				3F33A96C2B1235B3006ECF68 /* CharactersAssembly.swift in Sources */,
 				3F33A9602B1235A8006ECF68 /* LocationsAssembly.swift in Sources */,
 				3F33A97A2B1235BC006ECF68 /* RegistrationDataProvider.swift in Sources */,
+				3F6CEE0B2B2B313A00B599CA /* PersonPhotoCellData.swift in Sources */,
 				3F6CEDC22B21F3EA00B599CA /* CoreNibReusable.swift in Sources */,
 				3F33A97B2B1235BC006ECF68 /* RegistrationViewController.swift in Sources */,
 				3FB73C8A2AFD12A700892419 /* SplashDataProvider.swift in Sources */,
@@ -604,6 +687,7 @@
 				3F6CEDD42B22043600B599CA /* CharactersCell.swift in Sources */,
 				3F6CEDCE2B21FCCF00B599CA /* Section.swift in Sources */,
 				3FB73C8C2AFD12F600892419 /* SplashViewData.swift in Sources */,
+				3F6CEE042B2B2BA900B599CA /* PersonCoordinator.swift in Sources */,
 				3FB73CAB2B025AF300892419 /* ApiClient.swift in Sources */,
 				3F6CEDD02B21FD6D00B599CA /* UICollectionView+Registrate.swift in Sources */,
 			);
