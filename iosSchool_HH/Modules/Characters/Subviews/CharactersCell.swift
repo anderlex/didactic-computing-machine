@@ -56,8 +56,8 @@ class CharactersCell: UICollectionViewCell, CoreCellView {
         } else {
             loadingImageIndicator.stopAnimating()
             loadingImageIndicator.isHidden = true
-            characterImage.image = inputData.image ?? UIImage(named: "placeholder-image")
         }
+        characterImage.image = inputData.image ?? UIImage(named: "placeholder-image")
         nameLabel.text = inputData.name
         descritionLabel.text = inputData.description
     }
