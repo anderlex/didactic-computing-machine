@@ -63,7 +63,7 @@ class CharactersViewController<View: CharactersView>: BaseViewController<View> {
                             character: character,
                             isLoading: false,
                             image: image,
-                            selectClosure: nil
+                            selectClosure: selectClosure
                         ))
                     }
                 })

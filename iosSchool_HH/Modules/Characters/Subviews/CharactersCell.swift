@@ -45,7 +45,12 @@ class CharactersCell: UICollectionViewCell, CoreCellView {
         group.interItemSpacing = .fixed(24)
         let section = NSCollectionLayoutSection(group: group)
         section.interGroupSpacing = 30
-        section.contentInsets = NSDirectionalEdgeInsets(top: 59, leading: 16, bottom: 71, trailing: 16)
+        section.contentInsets = NSDirectionalEdgeInsets(
+            top: 59,
+            leading: 16,
+            bottom: 71,
+            trailing: 16
+        )
         return section
     }
 
