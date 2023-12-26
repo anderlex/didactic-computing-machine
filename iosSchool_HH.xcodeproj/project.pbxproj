@@ -66,6 +66,7 @@
 		3F6CEE162B2B42FD00B599CA /* PersonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE142B2B42FD00B599CA /* PersonHeaderView.swift */; };
 		3F6CEE172B2B42FD00B599CA /* PersonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEE152B2B42FD00B599CA /* PersonHeaderView.xib */; };
 		3F6CEE192B2B438900B599CA /* PersonHeaderViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE182B2B438900B599CA /* PersonHeaderViewData.swift */; };
+		3F6CEE1C2B3AD1D000B599CA /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE1B2B3AD1D000B599CA /* Episode.swift */; };
 		3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */; };
 		3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C742AEFC59B00892419 /* Assembly.swift */; };
 		3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C762AF9184F00892419 /* BaseCoordinator.swift */; };
@@ -160,6 +161,7 @@
 		3F6CEE142B2B42FD00B599CA /* PersonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderView.swift; sourceTree = "<group>"; };
 		3F6CEE152B2B42FD00B599CA /* PersonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonHeaderView.xib; sourceTree = "<group>"; };
 		3F6CEE182B2B438900B599CA /* PersonHeaderViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderViewData.swift; sourceTree = "<group>"; };
+		3F6CEE1B2B3AD1D000B599CA /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 		3FB73C742AEFC59B00892419 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = ../Assembly.swift; sourceTree = "<group>"; };
 		3FB73C762AF9184F00892419 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				3FB73CA32B02514D00892419 /* Location.swift */,
 				3FB73CA52B0259CF00892419 /* LocationsList.swift */,
 				3FB73CA72B025A3D00892419 /* TokenResponse.swift */,
+				3F6CEE1B2B3AD1D000B599CA /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 				3FB73C7D2AF922D600892419 /* AuthViewController.swift in Sources */,
 				3FFE2A802B1224A800EEF8BF /* CharactersApiClient.swift in Sources */,
 				3F6CEDB72B14D7CF00B599CA /* NSObject+ClassName.swift in Sources */,
+				3F6CEE1C2B3AD1D000B599CA /* Episode.swift in Sources */,
 				3FB73C872AF9261200892419 /* AuthCoordinator.swift in Sources */,
 				3F6CEE132B2B428100B599CA /* NSCollectionLayoutSection+SupplementaryItem .swift in Sources */,
 				3F33A9772B1235BC006ECF68 /* RegistrationCoordinator.swift in Sources */,
