@@ -14,6 +14,9 @@ protocol StorageManager {
     func getToken() -> TokenResponse?
     func removeToken()
     func lastLoginTime()
+    func getLastLoginTime() -> String
+    func saveLogin(login: String)
+    func getLogin() -> String?
 }
 
 class StorageManagerImp: StorageManager {
@@ -63,11 +66,23 @@ class StorageManagerImp: StorageManager {
 
     func lastLoginTime() {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MM yyyy"
+        dateFormatter.dateFormat = "dd.MM.yyyy"
         UserDefaults.standard.set(
             dateFormatter.string(from: Date()),
             forKey: StorageManagerKey.lastTimeLogin.rawValue
         )
+    }
+
+    func getLastLoginTime() -> String {
+        UserDefaults.standard.string(forKey: StorageManagerKey.lastTimeLogin.rawValue) ?? ".. .. ...."
+    }
+
+    func saveLogin(login: String) {
+        UserDefaults.standard.set(login, forKey: StorageManagerKey.login.rawValue)
+    }
+
+    func getLogin() -> String? {
+        UserDefaults.standard.string(forKey: StorageManagerKey.login.rawValue)
     }
 }
 
@@ -75,6 +90,7 @@ private extension StorageManagerImp {
 
     enum StorageManagerKey: String {
         case token
+        case login
         case notFirstLaunch
         case lastTimeLogin
     }

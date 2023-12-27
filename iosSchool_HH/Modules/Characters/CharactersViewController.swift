@@ -79,7 +79,7 @@ class CharactersViewController<View: CharactersView>: BaseViewController<View> {
             return
         }
         DispatchQueue.global().async {
-            self.dataProvider.getCharacter(url: url) { [weak self] character, error in
+            self.dataProvider.getCharacter(url: url) { [weak self] character, _ in
                 guard let character else {
                     return
                 }
@@ -88,13 +88,6 @@ class CharactersViewController<View: CharactersView>: BaseViewController<View> {
                     completion(character)
                 }
             }
-        }
-    }
-
-    private func getCharacter(id: Int) {
-        dataProvider.getCharacter(id: id) { character, error in
-            character?.description() ?? print("Нет персонажа")
-            print(error?.rawValue ?? "Нет ошибки")
         }
     }
 }

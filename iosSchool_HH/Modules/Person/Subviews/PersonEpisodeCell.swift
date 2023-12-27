@@ -42,7 +42,7 @@ class PersonEpisodeCell: UICollectionViewCell, CoreCellView {
         let section = NSCollectionLayoutSection(group: group)
         section.interGroupSpacing = 26
         section.contentInsets = NSDirectionalEdgeInsets(
-            top: 5,
+            top: 0,
             leading: 18,
             bottom: 50,
             trailing: 18
