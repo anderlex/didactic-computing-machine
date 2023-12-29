@@ -39,15 +39,15 @@ class AppCoordinator: BaseCoordinator<CoordinatorContext> {
         let tabVC = assembly.rootTabBarController()
 
         let locationsCoord = assembly.locationsCoordinator()
-        // let cabinetCoord = assembly.cabinetCoodrinator()
-        guard let locationsVC = locationsCoord.make()  /* let cabinetVC = cabinetCoord.make() */ else {
+        let cabinetCoord = assembly.profileCoordinator(onLogOut: authBootstrap)
+        guard let locationsVC = locationsCoord.make(), let cabinetVC = cabinetCoord.make()else {
             return
         }
         let navVC = assembly.rootNavigationController()
         navVC.setViewControllers([locationsVC], animated: false)
         navVC.tabBarItem = RootTab.locations.tabBarItem
-        // cabinetVC.tabBarItem = RootTab.cabinet.tabBarItem
-        tabVC.setViewControllers([navVC], animated: false)
+        cabinetVC.tabBarItem = RootTab.cabinet.tabBarItem
+        tabVC.setViewControllers([navVC, cabinetVC], animated: false)
         setRoot(viewController: tabVC)
     }
 

@@ -2,7 +2,7 @@
 //  Section.swift
 //  iosSchool_HH
 //
-//  Created by Анна Ваганова on 07.12.2023.
+//  Created by student on 07.12.2023.
 //
 
 import UIKit
