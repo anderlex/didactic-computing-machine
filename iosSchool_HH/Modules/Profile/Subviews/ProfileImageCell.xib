@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProfileBackgroundCell" customModule="iosSchool_HH" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProfileImageCell" customModule="iosSchool_HH" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="288" height="482"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -37,6 +37,7 @@
                 <constraint firstItem="OwP-oO-h5T" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QNk-ne-Zg7"/>
                 <constraint firstAttribute="bottom" secondItem="cUr-lp-95B" secondAttribute="bottom" id="Tpd-33-it1"/>
                 <constraint firstItem="cUr-lp-95B" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="aQW-LY-VUG"/>
+                <constraint firstItem="cUr-lp-95B" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OwP-oO-h5T" secondAttribute="bottom" constant="-50" id="j43-gh-wvM"/>
                 <constraint firstAttribute="trailing" secondItem="OwP-oO-h5T" secondAttribute="trailing" id="pAm-g0-rRT"/>
             </constraints>
             <size key="customSize" width="288" height="482"/>

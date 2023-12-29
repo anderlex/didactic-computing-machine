@@ -38,6 +38,7 @@ class ProfileViewController<View: ProfileView>: BaseViewController<View> {
                 color: UIColor(named: "iceberg"),
                 selectClosure: {[weak self] _ in
                     self?.storageManager.removeToken()
+                    self?.storageManager.removeLogin()
                     self?.onLogOut?()
                 }
             )

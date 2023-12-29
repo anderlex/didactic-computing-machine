@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct ProfileBackgroundCellData: CoreCellInputData {
+struct ProfileImageCellData: CoreCellInputData {
     var selectClosure: ((CoreCellInputData) -> Void)?
 
     let backgroundImage: UIImage?

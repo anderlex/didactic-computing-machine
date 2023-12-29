@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileBackgroundCell: UICollectionViewCell, CoreCellView {
+class ProfileImageCell: UICollectionViewCell, CoreCellView {
 
     @IBOutlet private weak var backgroundImage: UIImageView!
     @IBOutlet private weak var profileImage: UIImageView!
@@ -27,16 +27,10 @@ class ProfileBackgroundCell: UICollectionViewCell, CoreCellView {
             subitems: [item]
         )
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(
-            top: 0,
-            leading: 0,
-            bottom: 0,
-            trailing: 0
-        )
         return section
     }
 
-    func update(with inputData: ProfileBackgroundCellData) {
+    func update(with inputData: ProfileImageCellData) {
         backgroundImage.image = inputData.backgroundImage
         profileImage.image = inputData.profileImage
     }

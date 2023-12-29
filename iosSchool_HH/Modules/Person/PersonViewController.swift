@@ -33,10 +33,10 @@ final class PersonViewController<View: PersonView>: BaseViewController<View> {
         rootView.backgroundColor = UIColor(named: "character-background")
         rootView.update(data: .init(image: nil, episodeUrls: episodes))
 
-        if !self.imageUrl.isEmpty {
-            self.imageService.getImage(url: self.imageUrl) { image in
+        if !imageUrl.isEmpty {
+            imageService.getImage(url: imageUrl) { [weak self] image in
                 DispatchQueue.main.async {
-                    self.rootView.updatePersonPhoto(with: PersonPhotoCellData(image: image))
+                    self?.rootView.updatePersonPhoto(with: PersonPhotoCellData(image: image))
                 }
             }
         }

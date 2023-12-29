@@ -1,8 +1,8 @@
 //
 //  UICollectionView+Registrate.swift
-//  iosSchoolHH
+//  iosSchool_HH
 //
-//  Created by Анна on 26.09.2023.
+//  Created by student on 26.11.2023.
 //
 
 import UIKit

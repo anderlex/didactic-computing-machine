@@ -48,10 +48,13 @@ class PersonViewImp: UIView, PersonView {
     }
 
     func updatePersonPhoto(with data: PersonPhotoCellData) {
-        sections[0].updateCell(at: IndexPath(item: 0, section: 0), with: data)
-        guard let cell = sections[0].cell(
+        guard let sectionIndex = sections.firstIndex(where: { $0 is PersonPhotoSection }) else {
+            return
+        }
+        sections[sectionIndex].updateCell(at: IndexPath(item: 0, section: sectionIndex), with: data)
+        guard let cell = sections[sectionIndex].cell(
             collectionView: collectionView,
-            indexPath: IndexPath(item: 0, section: 0)
+            indexPath: IndexPath(item: 0, section: sectionIndex)
         ) as? PersonPhotoCell else {
             return
         }
@@ -90,7 +93,6 @@ class PersonViewImp: UIView, PersonView {
 
     private func layout() -> UICollectionViewLayout {
         UICollectionViewCompositionalLayout { [unowned self] section, env -> NSCollectionLayoutSection? in
-
             guard let layoutSection = sections[section].sectionLayoutProvider?(section, env) else {
                 return nil
             }

@@ -67,15 +67,15 @@
 		3F6CEE262B3B6DB800B599CA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE252B3B6DB800B599CA /* ProfileView.swift */; };
 		3F6CEE292B3B6DD600B599CA /* ProfileViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE282B3B6DD600B599CA /* ProfileViewData.swift */; };
 		3F6CEE2B2B3B6E2200B599CA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE2A2B3B6E2200B599CA /* ProfileViewController.swift */; };
-		3F6CEE302B3C05BC00B599CA /* ProfileBackgroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE2E2B3C05BC00B599CA /* ProfileBackgroundCell.swift */; };
-		3F6CEE312B3C05BC00B599CA /* ProfileBackgroundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEE2F2B3C05BC00B599CA /* ProfileBackgroundCell.xib */; };
+		3F6CEE302B3C05BC00B599CA /* ProfileImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE2E2B3C05BC00B599CA /* ProfileImageCell.swift */; };
+		3F6CEE312B3C05BC00B599CA /* ProfileImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEE2F2B3C05BC00B599CA /* ProfileImageCell.xib */; };
 		3F6CEE382B3C060000B599CA /* ProfileLoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE362B3C060000B599CA /* ProfileLoginCell.swift */; };
 		3F6CEE392B3C060000B599CA /* ProfileLoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEE372B3C060000B599CA /* ProfileLoginCell.xib */; };
 		3F6CEE3C2B3C067000B599CA /* ProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE3A2B3C067000B599CA /* ProfileInfoCell.swift */; };
 		3F6CEE3D2B3C067000B599CA /* ProfileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEE3B2B3C067000B599CA /* ProfileInfoCell.xib */; };
 		3F6CEE402B3C06AA00B599CA /* ProfileLogOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE3E2B3C06AA00B599CA /* ProfileLogOutCell.swift */; };
 		3F6CEE412B3C06AA00B599CA /* ProfileLogOutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CEE3F2B3C06AA00B599CA /* ProfileLogOutCell.xib */; };
-		3F6CEE432B3C080A00B599CA /* ProfileBackgroundCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE422B3C080A00B599CA /* ProfileBackgroundCellData.swift */; };
+		3F6CEE432B3C080A00B599CA /* ProfileImageCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE422B3C080A00B599CA /* ProfileImageCellData.swift */; };
 		3F6CEE452B3C082100B599CA /* ProfileLoginCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE442B3C082100B599CA /* ProfileLoginCellData.swift */; };
 		3F6CEE472B3C082F00B599CA /* ProfileInfoCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE462B3C082F00B599CA /* ProfileInfoCellData.swift */; };
 		3F6CEE492B3C084200B599CA /* ProfileLogOutCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE482B3C084200B599CA /* ProfileLogOutCellData.swift */; };
@@ -180,15 +180,15 @@
 		3F6CEE252B3B6DB800B599CA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3F6CEE282B3B6DD600B599CA /* ProfileViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewData.swift; sourceTree = "<group>"; };
 		3F6CEE2A2B3B6E2200B599CA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		3F6CEE2E2B3C05BC00B599CA /* ProfileBackgroundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBackgroundCell.swift; sourceTree = "<group>"; };
-		3F6CEE2F2B3C05BC00B599CA /* ProfileBackgroundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileBackgroundCell.xib; sourceTree = "<group>"; };
+		3F6CEE2E2B3C05BC00B599CA /* ProfileImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageCell.swift; sourceTree = "<group>"; };
+		3F6CEE2F2B3C05BC00B599CA /* ProfileImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileImageCell.xib; sourceTree = "<group>"; };
 		3F6CEE362B3C060000B599CA /* ProfileLoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoginCell.swift; sourceTree = "<group>"; };
 		3F6CEE372B3C060000B599CA /* ProfileLoginCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileLoginCell.xib; sourceTree = "<group>"; };
 		3F6CEE3A2B3C067000B599CA /* ProfileInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCell.swift; sourceTree = "<group>"; };
 		3F6CEE3B2B3C067000B599CA /* ProfileInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoCell.xib; sourceTree = "<group>"; };
 		3F6CEE3E2B3C06AA00B599CA /* ProfileLogOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLogOutCell.swift; sourceTree = "<group>"; };
 		3F6CEE3F2B3C06AA00B599CA /* ProfileLogOutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileLogOutCell.xib; sourceTree = "<group>"; };
-		3F6CEE422B3C080A00B599CA /* ProfileBackgroundCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBackgroundCellData.swift; sourceTree = "<group>"; };
+		3F6CEE422B3C080A00B599CA /* ProfileImageCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageCellData.swift; sourceTree = "<group>"; };
 		3F6CEE442B3C082100B599CA /* ProfileLoginCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoginCellData.swift; sourceTree = "<group>"; };
 		3F6CEE462B3C082F00B599CA /* ProfileInfoCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCellData.swift; sourceTree = "<group>"; };
 		3F6CEE482B3C084200B599CA /* ProfileLogOutCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLogOutCellData.swift; sourceTree = "<group>"; };
@@ -411,9 +411,9 @@
 		3F6CEE272B3B6DBE00B599CA /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				3F6CEE2E2B3C05BC00B599CA /* ProfileBackgroundCell.swift */,
-				3F6CEE2F2B3C05BC00B599CA /* ProfileBackgroundCell.xib */,
-				3F6CEE422B3C080A00B599CA /* ProfileBackgroundCellData.swift */,
+				3F6CEE2E2B3C05BC00B599CA /* ProfileImageCell.swift */,
+				3F6CEE2F2B3C05BC00B599CA /* ProfileImageCell.xib */,
+				3F6CEE422B3C080A00B599CA /* ProfileImageCellData.swift */,
 				3F6CEE362B3C060000B599CA /* ProfileLoginCell.swift */,
 				3F6CEE372B3C060000B599CA /* ProfileLoginCell.xib */,
 				3F6CEE442B3C082100B599CA /* ProfileLoginCellData.swift */,
@@ -647,7 +647,7 @@
 				3FF66CD92B13841300963BF7 /* RegistrationViewImp.xib in Resources */,
 				3FD1F2B62AE119F200C8563F /* LaunchScreen.storyboard in Resources */,
 				3FD1F2B32AE119F200C8563F /* Assets.xcassets in Resources */,
-				3F6CEE312B3C05BC00B599CA /* ProfileBackgroundCell.xib in Resources */,
+				3F6CEE312B3C05BC00B599CA /* ProfileImageCell.xib in Resources */,
 				3F33A97E2B12473A006ECF68 /* SplashViewImp.xib in Resources */,
 				3F6CEE0F2B2B3C0800B599CA /* PersonEpisodeCell.xib in Resources */,
 				3F6CEE092B2B308800B599CA /* PersonPhotoCell.xib in Resources */,
@@ -757,7 +757,7 @@
 				3FCE56332B3DA4780007F33C /* PersonView.swift in Sources */,
 				3F6CEDC62B21F49200B599CA /* CoreCellView.swift in Sources */,
 				3FCE56322B3DA4780007F33C /* PersonCoordinator.swift in Sources */,
-				3F6CEE432B3C080A00B599CA /* ProfileBackgroundCellData.swift in Sources */,
+				3F6CEE432B3C080A00B599CA /* ProfileImageCellData.swift in Sources */,
 				3F6CEE3C2B3C067000B599CA /* ProfileInfoCell.swift in Sources */,
 				3F33A96C2B1235B3006ECF68 /* CharactersAssembly.swift in Sources */,
 				3F6CEE472B3C082F00B599CA /* ProfileInfoCellData.swift in Sources */,
@@ -766,7 +766,7 @@
 				3F33A97A2B1235BC006ECF68 /* RegistrationDataProvider.swift in Sources */,
 				3F6CEE0B2B2B313A00B599CA /* PersonPhotoCellData.swift in Sources */,
 				3F6CEDC22B21F3EA00B599CA /* CoreNibReusable.swift in Sources */,
-				3F6CEE302B3C05BC00B599CA /* ProfileBackgroundCell.swift in Sources */,
+				3F6CEE302B3C05BC00B599CA /* ProfileImageCell.swift in Sources */,
 				3F33A97B2B1235BC006ECF68 /* RegistrationViewController.swift in Sources */,
 				3FB73C8A2AFD12A700892419 /* SplashDataProvider.swift in Sources */,
 				3FFE2A822B1224B700EEF8BF /* RegistrationApiClient.swift in Sources */,

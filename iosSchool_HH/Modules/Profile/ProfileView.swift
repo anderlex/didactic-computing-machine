@@ -71,7 +71,6 @@ class ProfileViewImp: UIView, ProfileView {
 
     private func layout() -> UICollectionViewLayout {
         UICollectionViewCompositionalLayout { [unowned self] section, env -> NSCollectionLayoutSection? in
-
             guard let layoutSection = sections[section].sectionLayoutProvider?(section, env) else {
                 return nil
             }
@@ -112,7 +111,7 @@ extension ProfileViewImp: UICollectionViewDelegate {
 }
 
 private extension ProfileViewImp {
-    typealias ProfileBackgroundSection = Section<ProfileBackgroundCell, EmptyReusableVIew, EmptyReusableVIew>
+    typealias ProfileBackgroundSection = Section<ProfileImageCell, EmptyReusableVIew, EmptyReusableVIew>
     typealias ProfileLoginSection = Section<ProfileLoginCell, EmptyReusableVIew, EmptyReusableVIew>
     typealias ProfileInfoSection = Section<ProfileInfoCell, EmptyReusableVIew, EmptyReusableVIew>
     typealias ProfileLogOutSection = Section<ProfileLogOutCell, EmptyReusableVIew, EmptyReusableVIew>

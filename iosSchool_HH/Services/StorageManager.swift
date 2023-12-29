@@ -17,6 +17,7 @@ protocol StorageManager {
     func getLastLoginTime() -> String
     func saveLogin(login: String)
     func getLogin() -> String?
+    func removeLogin()
 }
 
 class StorageManagerImp: StorageManager {
@@ -83,6 +84,10 @@ class StorageManagerImp: StorageManager {
 
     func getLogin() -> String? {
         UserDefaults.standard.string(forKey: StorageManagerKey.login.rawValue)
+    }
+
+    func removeLogin() {
+        UserDefaults.standard.removeObject(forKey: StorageManagerKey.login.rawValue)
     }
 }
 

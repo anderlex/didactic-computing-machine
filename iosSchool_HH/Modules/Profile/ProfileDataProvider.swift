@@ -7,10 +7,6 @@
 
 import Foundation
 
-protocol ProfileDataProvider {
+protocol ProfileDataProvider {}
 
-}
-
-class ProfileDataProviderImp: ProfileDataProvider {
-
-}
+class ProfileDataProviderImp: ProfileDataProvider {}

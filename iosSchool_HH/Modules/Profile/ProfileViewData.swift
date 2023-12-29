@@ -8,7 +8,7 @@
 import UIKit
 
 struct ProfileViewData {
-    let backgroundCellData: ProfileBackgroundCellData
+    let backgroundCellData: ProfileImageCellData
     let loginCellData: ProfileLoginCellData
     let infoCellData: [ProfileInfoCellData]
     let logOutCellData: ProfileLogOutCellData
@@ -21,7 +21,7 @@ struct ProfileViewData {
         color: UIColor?,
         selectClosure: @escaping ((CoreCellInputData) -> Void)
     ) {
-        self.backgroundCellData = ProfileBackgroundCellData(
+        self.backgroundCellData = ProfileImageCellData(
             backgroundImage: backgroundImage,
             profileImage: profileImage
         )

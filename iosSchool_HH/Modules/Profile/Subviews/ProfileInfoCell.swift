@@ -10,7 +10,6 @@ import UIKit
 class ProfileInfoCell: UICollectionViewCell, CoreCellView {
 
     @IBOutlet private weak var descriptionLabel: UILabel!
-    @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var profileColor: UIView!
     @IBOutlet private weak var lastLogin: UILabel!
 
@@ -18,7 +17,7 @@ class ProfileInfoCell: UICollectionViewCell, CoreCellView {
         super.awakeFromNib()
         layer.cornerRadius = 15
         layer.borderWidth = 1
-        layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+        layer.borderColor = UIColor(named: "black")?.cgColor
         clipsToBounds = false
         layer.shadowRadius = 8
         layer.shadowOpacity = 1
