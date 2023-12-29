@@ -16,7 +16,6 @@ protocol CharactersView: UIView {
 class CharactersViewImp: UIView, CharactersView {
 
     private var section: CoreSection?
-
     private lazy var collectionView: UICollectionView = {
         UICollectionView(
             frame: .zero, collectionViewLayout: layout()
@@ -60,7 +59,6 @@ class CharactersViewImp: UIView, CharactersView {
             guard let charactersSection = self.section else {
                 return nil
             }
-
             guard let layoutSection = charactersSection.sectionLayoutProvider?(section, env) else {
                 return nil
             }
@@ -93,7 +91,6 @@ extension CharactersViewImp: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 
 extension CharactersViewImp: UICollectionViewDelegate {
-
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         section?.selectCell(at: indexPath.item)
     }

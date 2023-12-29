@@ -8,7 +8,6 @@
 import UIKit
 
 protocol SplashView: UIView {
-
     func setView()
 }
 

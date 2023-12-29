@@ -12,6 +12,7 @@ protocol CharactersDataProvider {
 }
 
 class CharactersDataProviderImp: CharactersDataProvider {
+
     private let apiClient: CharactersApiClient
 
     init(apiClient: CharactersApiClient) {

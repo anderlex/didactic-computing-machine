@@ -37,7 +37,6 @@ class RegistrationViewImp: UIView, RegistrationView {
     }
 
     func setView() {
-
         isUserInteractionEnabled = true
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(viewDidTap))
         addGestureRecognizer(recognizer)

@@ -37,7 +37,6 @@ class AppCoordinator: BaseCoordinator<CoordinatorContext> {
 
     private func setTabVC() {
         let tabVC = assembly.rootTabBarController()
-
         let locationsCoord = assembly.locationsCoordinator()
         let cabinetCoord = assembly.profileCoordinator(onLogOut: authBootstrap)
         guard let locationsVC = locationsCoord.make(), let cabinetVC = cabinetCoord.make()else {

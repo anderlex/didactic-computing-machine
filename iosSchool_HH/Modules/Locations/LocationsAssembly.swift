@@ -14,7 +14,6 @@ protocol LocationsAssembly {
 }
 
 extension Assembly: LocationsAssembly {
-
     func locationsVC() -> LocationsViewController<LocationsViewImp> {
         .init(dataProvider: locationsDataProvider())
     }

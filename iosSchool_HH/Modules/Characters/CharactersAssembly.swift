@@ -14,7 +14,6 @@ protocol CharactersAssembly {
 }
 
 extension Assembly: CharactersAssembly {
-
     func charactersVC(data: LocationsCellData) -> CharactersViewController<CharactersViewImp> {
         .init(dataProvider: charactersDataProvider(), data: data, imageService: imageService)
     }

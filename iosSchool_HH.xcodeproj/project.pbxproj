@@ -79,7 +79,6 @@
 		3F6CEE452B3C082100B599CA /* ProfileLoginCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE442B3C082100B599CA /* ProfileLoginCellData.swift */; };
 		3F6CEE472B3C082F00B599CA /* ProfileInfoCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE462B3C082F00B599CA /* ProfileInfoCellData.swift */; };
 		3F6CEE492B3C084200B599CA /* ProfileLogOutCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE482B3C084200B599CA /* ProfileLogOutCellData.swift */; };
-		3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */; };
 		3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C742AEFC59B00892419 /* Assembly.swift */; };
 		3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C762AF9184F00892419 /* BaseCoordinator.swift */; };
 		3FB73C792AF9193900892419 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C782AF9193900892419 /* AppCoordinator.swift */; };
@@ -192,7 +191,6 @@
 		3F6CEE442B3C082100B599CA /* ProfileLoginCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoginCellData.swift; sourceTree = "<group>"; };
 		3F6CEE462B3C082F00B599CA /* ProfileInfoCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCellData.swift; sourceTree = "<group>"; };
 		3F6CEE482B3C084200B599CA /* ProfileLogOutCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLogOutCellData.swift; sourceTree = "<group>"; };
-		3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 		3FB73C742AEFC59B00892419 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = ../Assembly.swift; sourceTree = "<group>"; };
 		3FB73C762AF9184F00892419 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		3FB73C782AF9193900892419 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -543,7 +541,6 @@
 				3FB73CA92B025AE200892419 /* ApiClient */,
 				3FB73CA22B02511600892419 /* Models */,
 				3FB73C7A2AF9222B00892419 /* Modules */,
-				3FB73C6B2AE69BE500892419 /* ColorGenerator.swift */,
 				3FD1F2A92AE119EE00C8563F /* AppDelegate.swift */,
 				3FD1F2AB2AE119EE00C8563F /* SceneDelegate.swift */,
 				3FD1F2B22AE119F200C8563F /* Assets.xcassets */,
@@ -696,7 +693,6 @@
 				3F6CEE2B2B3B6E2200B599CA /* ProfileViewController.swift in Sources */,
 				3F33A95F2B1235A8006ECF68 /* LocationsViewData.swift in Sources */,
 				3FB73C902AFD137E00892419 /* SplashViewController.swift in Sources */,
-				3FB73C6C2AE69BE500892419 /* ColorGenerator.swift in Sources */,
 				3F332D702B0F88A600F8DBD4 /* RootTab.swift in Sources */,
 				3F6CEE192B2B438900B599CA /* PersonHeaderViewData.swift in Sources */,
 				3F6CEE112B2B3CCA00B599CA /* PersonEpisodeCellData.swift in Sources */,

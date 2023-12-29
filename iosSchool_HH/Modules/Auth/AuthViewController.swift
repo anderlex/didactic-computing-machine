@@ -38,7 +38,6 @@ class AuthViewController<View: AuthView>: BaseViewController<View> {
 // MARK: - AuthViewDelegate
 
 extension AuthViewController: AuthViewDelegate {
-
     func loginButtonDidTap(login: String, password: String) {
         HUD.show(.progress)
         dataProvider.auth(login: login, password: password) { [weak self] token, error in

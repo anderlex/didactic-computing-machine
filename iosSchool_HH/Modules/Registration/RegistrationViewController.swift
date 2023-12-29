@@ -38,7 +38,6 @@ class RegistrationViewController<View: RegistrationView>: BaseViewController<Vie
 // MARK: - RegistrationViewDelegate
 
 extension RegistrationViewController: RegistrationViewDelegate {
-
     func doneButtonDidTap(login: String, password: String, passwordAgain: String) {
         guard password == passwordAgain else {
             DispatchQueue.main.async {

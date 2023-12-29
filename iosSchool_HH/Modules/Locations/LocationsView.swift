@@ -8,6 +8,7 @@
 import UIKit
 
 protocol LocationsView: UIView {
+
     var selectLocation: ((LocationsCellData) -> Void)? { get set }
 
     func setView()
@@ -28,7 +29,6 @@ class LocationsViewImp: UIView, LocationsView {
         imageView.contentMode = .scaleToFill
         imageView.image = UIImage(named: "locations-background")
         imageView.translatesAutoresizingMaskIntoConstraints = false
-
         addSubview(imageView)
         imageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         imageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
@@ -42,7 +42,6 @@ class LocationsViewImp: UIView, LocationsView {
         tableView.allowsSelectionDuringEditing = false
         tableView.dataSource = self
         tableView.delegate = self
-
         tableView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(tableView)
         tableView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
@@ -53,7 +52,6 @@ class LocationsViewImp: UIView, LocationsView {
 
     func update(data: LocationsViewData) {
         viewData = data
-
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -83,7 +81,6 @@ extension LocationsViewImp: UITableViewDataSource {
 // MARK: UITableViewDelegate
 
 extension LocationsViewImp: UITableViewDelegate {
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         guard let viewData else {

@@ -8,6 +8,7 @@
 import UIKit
 
 class CharactersCoordinator: BaseCoordinator<CharactersCoordinator.Context> {
+
     struct Context {
         let data: LocationsCellData
     }

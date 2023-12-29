@@ -7,6 +7,7 @@
 import UIKit
 
 struct PersonViewData {
+
     let photoCellData: PersonPhotoCellData
     let episodeData: [PersonEpisodeCellData]
     let episodeHeader: PersonHeaderViewData
