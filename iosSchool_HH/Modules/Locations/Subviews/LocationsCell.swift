@@ -22,7 +22,7 @@ class LocationsCell: UITableViewCell {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var populationLabel: UILabel!
-    @IBOutlet private var bottomBound: UIView!
+    @IBOutlet private weak var bottomBound: UIView!
 
     // MARK: - Private methods
 

@@ -79,7 +79,7 @@
 		3F6CEE452B3C082100B599CA /* ProfileLoginCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE442B3C082100B599CA /* ProfileLoginCellData.swift */; };
 		3F6CEE472B3C082F00B599CA /* ProfileInfoCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE462B3C082F00B599CA /* ProfileInfoCellData.swift */; };
 		3F6CEE492B3C084200B599CA /* ProfileLogOutCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CEE482B3C084200B599CA /* ProfileLogOutCellData.swift */; };
-		3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C742AEFC59B00892419 /* Assembly.swift */; };
+		3F91DBC32B3F00D500FB4B63 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91DBC22B3F00D500FB4B63 /* Assembly.swift */; };
 		3FB73C772AF9184F00892419 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C762AF9184F00892419 /* BaseCoordinator.swift */; };
 		3FB73C792AF9193900892419 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C782AF9193900892419 /* AppCoordinator.swift */; };
 		3FB73C7D2AF922D600892419 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB73C7C2AF922D600892419 /* AuthViewController.swift */; };
@@ -191,7 +191,7 @@
 		3F6CEE442B3C082100B599CA /* ProfileLoginCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoginCellData.swift; sourceTree = "<group>"; };
 		3F6CEE462B3C082F00B599CA /* ProfileInfoCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCellData.swift; sourceTree = "<group>"; };
 		3F6CEE482B3C084200B599CA /* ProfileLogOutCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLogOutCellData.swift; sourceTree = "<group>"; };
-		3FB73C742AEFC59B00892419 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = ../Assembly.swift; sourceTree = "<group>"; };
+		3F91DBC22B3F00D500FB4B63 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		3FB73C762AF9184F00892419 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		3FB73C782AF9193900892419 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3FB73C7C2AF922D600892419 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
@@ -546,7 +546,7 @@
 				3FD1F2B22AE119F200C8563F /* Assets.xcassets */,
 				3FD1F2B42AE119F200C8563F /* LaunchScreen.storyboard */,
 				3FD1F2B72AE119F200C8563F /* Info.plist */,
-				3FB73C742AEFC59B00892419 /* Assembly.swift */,
+				3F91DBC22B3F00D500FB4B63 /* Assembly.swift */,
 				3FB73C782AF9193900892419 /* AppCoordinator.swift */,
 			);
 			path = iosSchool_HH;
@@ -684,7 +684,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F6CEDEC2B2B236C00B599CA /* PersonApiClient.swift in Sources */,
-				3FB73C752AEFC59B00892419 /* Assembly.swift in Sources */,
 				3FB73C8E2AFD131C00892419 /* SplashView.swift in Sources */,
 				3FB73CB12B02601100892419 /* AuthApiClient.swift in Sources */,
 				3F6CEDC42B21F43500B599CA /* CoreCellInputData.swift in Sources */,
@@ -756,6 +755,7 @@
 				3F6CEE432B3C080A00B599CA /* ProfileImageCellData.swift in Sources */,
 				3F6CEE3C2B3C067000B599CA /* ProfileInfoCell.swift in Sources */,
 				3F33A96C2B1235B3006ECF68 /* CharactersAssembly.swift in Sources */,
+				3F91DBC32B3F00D500FB4B63 /* Assembly.swift in Sources */,
 				3F6CEE472B3C082F00B599CA /* ProfileInfoCellData.swift in Sources */,
 				3F6CEE222B3B6D0100B599CA /* ProfileCoordinator.swift in Sources */,
 				3F33A9602B1235A8006ECF68 /* LocationsAssembly.swift in Sources */,

@@ -21,15 +21,15 @@ struct ProfileViewData {
         color: UIColor?,
         selectClosure: @escaping ((CoreCellInputData) -> Void)
     ) {
-        self.backgroundCellData = ProfileImageCellData(
+        backgroundCellData = ProfileImageCellData(
             backgroundImage: backgroundImage,
             profileImage: profileImage
         )
-        self.loginCellData = ProfileLoginCellData(login: login)
-        self.infoCellData = [
+        loginCellData = ProfileLoginCellData(login: login)
+        infoCellData = [
             ProfileInfoCellData(lastLogin: lastLogin, color: nil),
             ProfileInfoCellData(lastLogin: nil, color: color)
         ]
-        self.logOutCellData = ProfileLogOutCellData(selectClosure: selectClosure)
+        logOutCellData = ProfileLogOutCellData(selectClosure: selectClosure)
     }
 }

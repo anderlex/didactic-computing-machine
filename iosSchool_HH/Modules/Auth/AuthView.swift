@@ -75,7 +75,8 @@ class AuthViewImp: UIView, AuthView {
             self,
             selector: #selector(keyboardWillHide),
             name: UIResponder.keyboardWillHideNotification,
-            object: nil)
+            object: nil
+        )
     }
 
     // MARK: - Private

@@ -56,7 +56,7 @@ class CharactersCell: UICollectionViewCell, CoreCellView {
     func update(with inputData: CharactersCellData) {
         if inputData.isLoading {
             loadingImageIndicator.startAnimating()
-            characterImage.image = UIImage(named: "placeholder-image")
+            loadingImageIndicator.isHidden = false
         } else {
             loadingImageIndicator.stopAnimating()
             loadingImageIndicator.isHidden = true
